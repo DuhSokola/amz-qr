@@ -1,0 +1,25 @@
+.variantlist {
+  .md-list-item-text {
+    @include fontnormal;
+    text-transform: uppercase;
+    color: $black;
+    .ng-binding {
+      display: block;
+      font-size: rem(16px) !important;
+      text-align: center;
+    }
+  }
+
+  h1 {
+    font-size: rem(14px);
+    color: $seat-red;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h3 {
+    @include fontlight;
+    font-size: rem(47px);
+    text-align: center;
+  }
+}

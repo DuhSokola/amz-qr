@@ -1,0 +1,44 @@
+header {
+  @include fontextendedbold;
+  background-image: linear-gradient(90deg, rgb(229,234,238) 0%, rgb(255,255,255) 60%);
+  padding: 1rem;
+  border-bottom: 1px solid $lighter-grey-30;
+
+  nav {
+    padding-top: 1rem;
+  }
+
+  .logo {
+    margin-top: 1rem;
+    float: right;
+    width: 203px;
+    height: 25px;
+    background-image: url(../img/audi/logo.png);
+  }
+
+  .burger {
+    float: left;
+    margin-top: 6px;
+    span {
+      background-color: $black;
+    }
+  }
+
+  .menu {
+    a {
+      color: $black;
+    }
+    li {
+      font-size: 0.9rem;
+      margin: 0 1.5rem;
+      padding: 1.5rem 0;
+      background-size: .6rem;
+      &:hover {
+        color: $black;
+      }
+    }
+    a:not(:first-child) li {
+      border-top: 1px solid $lighter-grey;
+    }
+  }
+}

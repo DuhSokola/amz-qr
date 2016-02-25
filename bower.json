@@ -1,0 +1,25 @@
+{
+  "name": "dynSearch",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-material": "~1.0.1",
+    "angular-translate": "~2.8.1",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "underscore": "~1.8.3",
+    "dynamic": "https://github.com/DuhSokola/dynamicTest.git#1.0-alpha",
+    "jquery": "~2.1.4",
+    "angular-messages": "~1.4.8",
+    "ngprogress": "~1.1.2",
+    "angular-block-ui": "~0.2.2",
+    "angular-cookies": "~1.4.8",
+    "ngSanitize": "~0.0.2",
+    "susy": ">=2.2.5",
+    "breakpoint-sass": ">=2.6.1"
+  },
+  "resolutions": {
+    "angular": "1.5.0"
+  }
+}

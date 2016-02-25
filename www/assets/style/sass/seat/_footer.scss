@@ -1,0 +1,90 @@
+footer {
+  background-color: $footer-background;
+  color: $footer-text;
+  a {
+    color: $footer-text;
+  }
+
+  //social media styles
+  .social-media {
+    background-color: $black;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    div{
+      height: 1.8rem;
+      @include span(1 of 4 inside nogutter);
+      &.twitter, &.newsletter{
+        display: none;
+      }
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      border-bottom: 1px solid $footer-background;
+      padding-top: 1.5rem;
+    }
+  }
+  .facebook {
+    background: url(../img/seat/facebook.svg) center center;
+  }
+  .google{
+    background: url(../img/seat/google.svg) center center;
+  }
+  .instagram {
+    background: url(../img/seat/instagram.svg) center center;
+  }
+  .youtube{
+    background: url(../img/seat/youtube.svg) center center;
+  }
+
+  //language switch
+  .language {
+    background-color: $black;
+    color: $white;
+    position: relative;
+    padding: 0; //1.5rem;
+    @include arrowRight;
+    background-image: url(../img/seat/arrow-right.svg);
+    background-size: 0.6rem;
+    background-position: right 1.5rem center;
+    .md-select-value {
+      width: calc(100% + 1.5rem);
+    }
+    .md-select-menu-container {
+      position: absolute;
+      width: 100%;
+      top: calc(.8rem + 30px);
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      .language-options {
+        @include button($bg:$white,$font-size:15,$color:$footer-text,$padding:.8rem);
+      }
+    }
+    .md-text {
+      left: 1.5rem;
+    }
+  }
+
+  .legal {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    >div {
+      border-bottom: 1px solid $black;
+      position: relative;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    >div:last-child::after {
+      content: 'TECHNOLOGY TO ENJOY';
+      position: absolute;
+      left: 0;
+      bottom: -4.5rem;
+      color: $white;
+      font-size: 1.55rem;
+      @include fontbold;
+    }
+  }
+  .copyright {
+    padding: 6rem 1.5rem 1.5rem;
+  }
+}

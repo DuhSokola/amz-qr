@@ -1,0 +1,38 @@
+$header-height: 66px;
+
+header {
+  padding: 0 1rem;
+  height: $header-height;
+  border-bottom: 1px solid $line;
+  .logo {
+    width: 121px;
+    height: $header-height;
+    background-image: url(../img/seat/logo.png);
+  }
+
+  .burger {
+    margin-top: calc((66px - (9px + .4rem))/2);
+    span {
+      background-color: $seat-black;
+    }
+  }
+
+  .menu {
+    top: $header-height;
+    a {
+      color: $seat-black;
+    }
+    li {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      padding: 1.5rem;
+      background-size: .6rem;
+      &:hover {
+        color: $black;
+      }
+    }
+    a:not(:first-child) li {
+      border-top: 1px solid $lighter-grey;
+    }
+  }
+}

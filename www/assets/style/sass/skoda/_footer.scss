@@ -1,0 +1,76 @@
+footer {
+  color: $footer-text;
+  .language, .legal, .copyright {
+    background-color: $footer-background;
+    padding: 0 1rem 1rem;
+  }
+  a{
+    color: $footer-text;
+  }
+
+  //social media styles
+  .social-media {
+    @include clearfix;
+    margin: 0 1rem;
+    border-top: 1px solid $lighter-grey;
+    padding: 1.5rem 0;
+    div{
+      height: 2.5rem;
+      @include span(1 of 3 inside nogutter);
+      &.google, &.instagram, &.twitter {
+        display: none;
+      }
+    }
+  }
+  .facebook {
+    background: url(../img/skoda/facebook.png) center center;
+  }
+  .youtube{
+    background: url(../img/skoda/youtube.png) center center;
+  }
+  .newsletter {
+    background: url(../img/skoda/newsletter.png) center center;
+  }
+
+  //language switch
+  .language {
+    position: relative;
+    padding: 0; //1rem;
+    @include arrowLeft;
+    padding-left: 2.5rem;
+    background-image: url(../img/skoda/arrow-right-single.svg);
+    background-position: left 1rem center;
+    background-size: 0.6rem;
+    .md-select-value {
+    }
+    .md-select-menu-container {
+      position: absolute;
+      width: 100%;
+      top: calc(.8rem + 30px);
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      .language-options {
+        @include button($bg:$white,$font-size:15,$color:$footer-text,$padding:.8rem);
+      }
+    }
+
+    .md-text {
+      left: 2.5rem;
+    }
+  }
+
+  .legal > div{
+    @include arrowLeft;
+    background-image: url(../img/skoda/arrow-right-single.svg);
+    background-size: 0.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &:first-of-type {
+      border-top: 1px solid $grey;
+    }
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $grey;
+    }
+  }
+}

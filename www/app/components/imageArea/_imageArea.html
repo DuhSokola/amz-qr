@@ -1,0 +1,26 @@
+<div class="image-area">
+    <div layout="column" ng-controller="ImageAreaCtrl">
+        <div>
+        <div class="image-area-top">
+            <div layout="row" layout-align="center">
+                <h1 class=".md-title">{{global.params.selectedModelVariantObj.name}}</h1>
+            </div>
+
+            <div layout="row" layout-align="center" class="price">
+                <h3>{{'IMAGEAREA_FROM'|translate}}&nbsp;{{global.params.selectedModelVariantObj.versionList[0].price | currency : "" : 0}} {{'IMAGEAREA_FRANCS' | translate}}</h3>
+            </div>
+        </div>
+
+            <div layout="row" layout-align="center" class="car-image">
+                <!--<img class="car-contact" src="{{imageUrl}}">-->
+                <img class="car-contact" src="assets/style/img/passat.jpg">
+            </div>
+
+            <div layout="row" layout-align="center end" class="variant-button-wrapper">
+                <md-button class="variant-button md-primary" href="#/variantList/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" aria-label="models">
+                    <span translate="CONTACT_MODELS"></span>
+                </md-button>
+            </div>
+        </div>
+    </div>
+</div>

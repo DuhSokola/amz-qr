@@ -1,0 +1,168 @@
+form {
+  legend {
+    @include fontbold;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: rem(25px);
+    margin-bottom: rem(25px);
+  }
+  fieldset legend {
+    @include fontbold;
+  }
+}
+
+.slider {
+  .ng-binding {
+    @include fontbold;
+    font-size: rem(15px);
+  }
+}
+input[type=text],input[type=number] {
+  border: 1px solid $light-grey;
+  .md-input-focused & {
+    border-color: $vw-blue;
+  }
+}
+
+
+// CHECKBOX
+// =============================================================================
+md-checkbox .md-label {
+  &:before {
+    border: 1px solid $grey;
+    border-radius: 2px;
+  }
+}
+md-checkbox[aria-checked="true"] .md-label {
+  &:before {
+    background-color: $vw-blue;
+  }
+  &:after {
+    border: 2px solid $white;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+
+// RADIO BUTTON
+// =============================================================================
+md-radio-button .md-label {
+  &:before {
+    border: 1px solid $grey;
+  }
+}
+md-radio-button[aria-checked="true"] .md-label {
+  &:before {
+    border: 7px solid $vw-blue;
+  }
+}
+md-radio-button[aria-disabled="true"] .md-label {
+  &:before {
+    border: 2px solid $lighter-grey;
+  }
+}
+
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $blue-light-grey;
+  }
+}
+
+
+// MESSAGES INPUT VALIDATION
+// =============================================================================
+md-input-container.md-input-invalid {
+  .md-input-messages-animation {
+    span {
+      color: $vw-blue;
+    }
+  }
+}
+
+
+// BASIC STYLES
+// =============================================================================
+.md-input-message-animation {
+  font-size: rem(12px);
+}
+
+.md-track, .md-thumb-container {
+  background: $slider-bg;
+}
+
+.md-track-fill, .md-thumb {
+  background: $vw-blue;
+}
+
+.md-thumb {
+  border-radius: 50%;
+}
+
+.md-track-container {
+  border-radius: 4px;
+}
+
+
+.total-value {
+  @include fontbold;
+  color: $vw-green;
+}
+
+.form {
+  .layout-row {
+    border-color: $form-line !important;
+  }
+
+  h1 {
+    font-size: rem(22px);
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .slider .ng-scope, legend.ng-scope, h4.ng-binding, .total {
+    @include fontbold;
+    color: $black;
+  }
+}
+
+.form .layout-row.total-outer-wrapper {
+  border-bottom: 2px solid $form-line !important;
+}
+
+
+// SELECT
+// =============================================================================
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  border: 1px solid $light-grey;
+  border-radius: 3px;
+  background: url(../img/volkswagen/arrow-dropdown.svg) no-repeat right 1rem center;
+  background-size: 0.8rem;
+}
+
+md-input-container {
+  .md-select-placeholder span, .md-text {
+    font-size: rem(16px);
+    color: grey;
+  }
+}
+
+md-select-menu {
+  md-content {
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
+}
+.select {
+  .md-placeholder, label {
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+  }
+}

@@ -1,0 +1,15 @@
+<div ui-view="header" class="header-wrapper"></div>
+
+<div class="back-button-wrapper" layout="row" layout-align="center">
+    <!-- <md-button href="#/modelList/{{global.params.selectedBrand}}" class="md-raised back-button" translate="LANDINGPAGE_BACK_TO_MODELLIST" aria-label="button"></md-button> -->
+    <md-button type="button" href="#/leasingCalculator/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" class="md-raised back-button" translate="CONTACT_BUTTON_BACK"
+                           aria-label="Back" ng-if="global.params.selectedMode == 'leasing'"></md-button>
+    <md-button type="button" href="#/landingPage/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" class="md-raised back-button" translate="CONTACT_BUTTON_BACK"
+               aria-label="Back" ng-if="global.params.selectedMode != 'leasing'"></md-button>
+</div>
+
+<div class="variantlist">
+    <div ui-view="variantList"></div>
+</div>
+
+<div ui-view="footer"></div>

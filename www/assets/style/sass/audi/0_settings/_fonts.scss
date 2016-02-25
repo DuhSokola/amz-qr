@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'AudiTypeExtendedBold';
+  src: url('../fonts/audi/AudiType-ExtendedBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/audi/AudiType-ExtendedBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/audi/AudiType-ExtendedBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/audi/AudiType-ExtendedBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/audi/AudiType-ExtendedBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AudiTypeExtendedNormal';
+  src: url('../fonts/audi/AudiType-ExtendedNormal.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/audi/AudiType-ExtendedNormal.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/audi/AudiType-ExtendedNormal.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/audi/AudiType-ExtendedNormal.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/audi/AudiType-ExtendedNormal.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AudiTypeBold';
+  src: url('../fonts/audi/AudiType-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/audi/AudiType-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/audi/AudiType-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/audi/AudiType-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/audi/AudiType-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AudiTypeNormal';
+  src: url('../fonts/audi/AudiType-Normal.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/audi/AudiType-Normal.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/audi/AudiType-Normal.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/audi/AudiType-Normal.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/audi/AudiType-Normal.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@mixin fontbold {
+  font-family: 'AudiTypeBold',Verdana,sans-serif;
+}
+
+@mixin fontnormal {
+  font-family: 'AudiTypeNormal',Verdana,sans-serif;
+}
+
+@mixin fontextendednormal {
+  font-family: 'AudiTypeExtendedNormal',Verdana,sans-serif;
+}
+
+@mixin fontextendedbold {
+  font-family: 'AudiTypeExtendedBold',Verdana,sans-serif;
+}
+
+body {
+  @include fontnormal;
+}
+
+b {
+ @include fontbold;
+}
+
+h1 {
+  @include fontextendedbold;
+  font-size: rem(34px);
+  line-height: rem(38px);
+  margin-bottom: 0.5rem;
+}
+h2 {
+  @include fontextendedbold;
+  font-size: rem(24px);
+  line-height: rem(28px);
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  @include fontnormal;
+  font-size: rem(20px);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  @include fontnormal;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}

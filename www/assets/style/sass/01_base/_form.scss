@@ -1,0 +1,458 @@
+// DEFAULT FORM STYLES
+// =============================================================================
+.form {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  .layout-row {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    @include clearfix;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid grey;
+    }
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+  md-input-container {
+    position: relative;
+    display: block;
+  }
+
+  input[type=text], input[type=number] {
+    width: 100%;
+    margin-top: 1rem;
+    height: 3rem;
+    border-radius: 3px;
+    padding-left: 1rem;
+    font-size: rem(14px);
+    &:focus {
+      outline: none;
+    }
+  }
+
+  label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    height: 3rem;
+    line-height: 3rem;
+    color: grey;
+    font-size: rem(14px);
+    &:hover {
+      cursor: text;
+    }
+  }
+
+  .md-input-focused label, .md-input-has-value label{
+    display: none;
+  }
+
+  md-input-container:focus {
+    outline: none;
+  }
+}
+
+// CHECKBOX
+// =============================================================================
+input[type="checkbox"] {
+  visibility: hidden;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+md-checkbox {
+  &:focus, &:focus .md-label{
+    outline: none;
+  }
+  .md-label {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+    }
+    span {
+      display: inline-block;
+      float: right;
+      width: calc(100% - 30px);
+    }
+  }
+}
+md-checkbox[aria-checked="true"] .md-label {
+  &:before {
+    border: none;
+  }
+  &:after {
+    content: '';
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    background: transparent;
+    transform: rotate(-45deg);
+  }
+}
+
+// RADIO BUTTON
+// =============================================================================
+input[type="radio"] {
+  visibility: hidden;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  user-select: none;
+}
+
+md-radio-button .md-label {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}
+md-radio-button[name=radio-catalog] {
+  display: inline-block;
+  width: calc(50% - 18px);
+  float: left;
+  margin-top: .5rem;
+  &:first-of-type {
+    margin-left: 35px;
+  }
+}
+
+md-radio-group:focus {
+  outline: none;
+}
+
+// SLIDER
+// =============================================================================
+
+.slider {
+  .ng-binding {
+    float: right;
+  }
+
+  &.layout-row {
+    padding-bottom: 0;
+  }
+
+  span {
+    font-size: rem(14px);
+  }
+}
+
+.form .ng-isolate-scope {
+  position: relative;
+  display: block;
+  width: calc(100% - 20px);
+  height: 50px;
+  padding-left: 0 !important;
+  margin: 0 10px;
+}
+
+.ng-isolate-scope:focus {
+  outline: none;
+}
+
+.md-slider-wrapper {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.md-track, .md-thumb-container, .md-thumb {
+  position: absolute;
+}
+
+.md-track {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.md-track-container {
+  position: relative;
+  width: calc(100% + 20px);
+  left: -10px;
+  top: 15px;
+  overflow: hidden;
+}
+
+.md-thumb-container {
+  top: 0;
+  left: 0;
+}
+
+.md-thumb {
+  top: 7px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+}
+
+.md-track, .md-track-container {
+  height: 5px;
+}
+
+.md-track, .md-thumb-container {
+  background: grey;
+}
+
+.md-track-fill, .md-thumb {
+  background: red;
+}
+
+.md-thumb-text {
+  display: none;
+}
+
+
+// LEASING FORM FIELDSET STYLE
+// =============================================================================
+
+.leasing-form fieldset.contact-fieldset {
+  margin-top: 1rem;
+  padding: 2.5rem 0 1.5rem;
+  span {
+    font-size: rem(14px);
+  }
+}
+
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  margin-top: 1.5rem;
+  padding: 1rem 0 1.5rem;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid grey;
+  }
+  span {
+    font-size: rem(14px);
+    display: block;
+    float: left;
+    left: 25px;
+    top: 2px;
+    position: relative;
+  }
+}
+
+// MESSAGES INPUT VALIDATION
+// =============================================================================
+.md-input-messages-animation {
+  display: none;
+}
+
+md-input-container.md-input-invalid {
+  .md-input-messages-animation {
+    display: inline-block;
+    span {
+      top: 4px;
+      left: 1rem;
+    }
+  }
+}
+
+// DEFAULT STYLES FOR LEASINGFORM
+// =============================================================================
+
+.zins {
+  font-size: rem(14px);
+  float: left;
+  margin-right: 10px;
+}
+
+.form .layout-row.total-outer-wrapper {
+  border-bottom: 2px solid grey !important;
+}
+
+.total-wrapper {
+  margin-bottom: 1.5rem;
+  @include clearfix;
+}
+
+.total {
+  float: left;
+}
+
+.total-value {
+  float: right;
+  font-size: rem(18px);
+  color: red;
+}
+
+
+// SELECT
+// =============================================================================
+md-select {
+  outline: none;
+}
+md-select-menu md-option {
+  outline: none;
+}
+
+.md-click-catcher {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(255,255,255,0.8);
+}
+
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+.select {
+  user-select: none;
+  @include clearfix;
+  .md-placeholder, label {
+    z-index: 2;
+    top: 0;
+    padding-right: 30px;
+    background: #fff;
+  }
+
+  &.md-input-has-value {
+    .md-placeholder, label {
+      display: none;
+    }
+  }
+}
+
+md-input-container {
+  .md-select-placeholder span, .md-text {
+    font-size: rem(16px);
+    line-height: 2.5rem;
+    color: grey;
+    position: absolute;
+    left: -.5rem;
+    top: 0;
+  }
+
+  select {
+    display: none;
+  }
+}
+
+md-select-menu md-content {
+  min-width: 136px;
+  min-height: 48px;
+  max-height: 256px;
+  overflow-y: auto;
+}
+
+md-select-menu > * {
+  opacity: 0;
+}
+
+md-content {
+  display: block;
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+md-select-menu {
+  md-content {
+    display: block;
+    top: 0; //3.3rem;
+    margin: 0 1rem;
+    background: #fff;
+    border: 1px solid grey;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
+
+  md-option {
+    .md-text {
+      padding: 1rem;
+    }
+    &:not(:last-child) .md-text {
+      border-bottom: 1px solid #eee;
+    }
+    .md-ripple-container {
+      display: none;
+    }
+  }
+}
+
+.md-select-menu-container {
+  position: fixed;
+  left: 0 !important;
+  top: 0;
+  z-index: 90;
+  opacity: 0;
+  width: 100%;
+  display: none;
+}
+
+.md-select-menu-container.md-active md-select-menu > * {
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  transition-duration: 150ms;
+  transition-delay: 100ms;
+}
+
+.md-select-menu-container.md-active {
+  display: block;
+  opacity: 1;
+}
+
+// DEFAULT STYLES FOR LEASINGFORM
+// =============================================================================
+.form-name-wrapper, .form-street-wrapper, .form-place-wrapper, .form-phone-wrapper,
+.form-mail-wrapper {
+  @include clearfix;
+}
+
+.form-street-wrapper {
+  md-input-container:nth-child(1) {
+    float: left;
+    width: 69%;
+  }
+  md-input-container:nth-child(2) {
+    width: 29%;
+    float: right;
+  }
+}
+
+.form-place-wrapper {
+  md-input-container:nth-child(1) {
+    float: left;
+    width: 34%;
+  }
+  md-input-container:nth-child(2) {
+    width: 64%;
+    float: right;
+  }
+}
+
+@include breakpoint(min-width 600px) {
+  .form-name-wrapper{
+    md-input-container {
+      float: left;
+      width: 49%;
+    }
+    md-input-container:nth-child(2) {
+      float: right;
+    }
+  }
+}

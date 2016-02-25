@@ -1,0 +1,31 @@
+footer {
+  .social-media {
+    @include clearfix;
+    > div{
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &:after {
+    @include clearfix;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
+
+  .language {
+    .md-select-value {
+      display: block;
+      height: 3rem;
+    }
+
+    .md-text {
+      display: block;
+      left: 1rem;
+      height: 3rem;
+      line-height: 3rem;
+    }
+  }
+}

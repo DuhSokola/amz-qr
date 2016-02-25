@@ -1,0 +1,45 @@
+{
+  "name": "qrlandingpagefrontend",
+  "version": "0.0.1",
+  "description": "QR-Landing Frontend Pages",
+  "main": "app.js",
+  "dependencies": {
+    "autoprefixer": ">=6.0.0",
+    "bower": "^1.7.7",
+    "browser-sync": "^2.11.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.0",
+    "gulp-css-globbing": ">=0.1.8",
+    "gulp-duration": "0.0.0",
+    "gulp-filter": ">=3.0.1",
+    "gulp-debug": "^2.1.2",
+    "gulp-inject": "^3.0.0",
+    "gulp-postcss": ">=6.0.1",
+    "gulp-sass": "==2.0.4",
+    "gulp-sourcemaps": ">=1.6.0",
+    "gulp-useref": "^3.0.5",
+    "gulp-util": "^2.2.20",
+    "merge-stream": "^1.0.0",
+    "csswring": ">=4.0.0",
+    "wiredep": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install",
+    "gulp": "gulp",
+    "bower": "bower"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmazeeLabs/amag-qr-landingpage"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmazeeLabs/amag-qr-landingpage"
+  },
+  "homepage": "https://github.com/AmazeeLabs/amag-qr-landingpage/blob/master/README.md",
+  "engines": {
+    "node": "4.2.4"
+  }
+}

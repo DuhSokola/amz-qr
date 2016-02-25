@@ -1,0 +1,61 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin arrowLeft($padding:1.5rem,$bgSize:.8rem,$bgPosition:left center) {
+  background-position: $bgPosition;
+  background-repeat: no-repeat;
+  background-size: $bgSize;
+  padding-left: $padding;
+}
+
+@mixin arrowRight($padding:1.5rem,$bgSize:.8rem,$bgPosition:right center) {
+  background-position: $bgPosition;
+  background-repeat: no-repeat;
+  background-size: $bgSize;
+  padding-right: $padding;
+}
+
+@mixin iconLeft($padding:4rem,$bgSize:2.2rem,$bgPosition:left center) {
+  background-position: $bgPosition;
+  background-repeat: no-repeat;
+  background-size: $bgSize;
+  padding-left: $padding;
+}
+
+@mixin iconRight($padding:4rem,$bgSize:2.2rem,$bgPosition:right center) {
+  background-position: $bgPosition;
+  background-repeat: no-repeat;
+  background-size: $bgSize;
+  padding-right: $padding;
+}
+
+@mixin vwArrow {
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 9vw;
+    margin-top: -15px;
+    background: url(../img/volkswagen/arrow-down.svg) bottom center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+  }
+}
+
+@mixin audiArrow {
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    background: url(../img/audi/arrow-right.svg) bottom center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+  }
+}

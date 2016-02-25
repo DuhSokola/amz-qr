@@ -1,0 +1,82 @@
+.error-text {
+    color: rgb(221, 44, 0);
+}
+
+.error-select {
+    color: rgb(221, 44, 0);
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.error-input {
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(221, 44, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    height: 30px;
+    margin-bottom: 3px;
+}
+
+md-checkbox.error-checkbox .md-icon {
+    border-color: rgb(221, 44, 0);
+}
+
+md-radio-button.error-radio .md-off {
+    border-color: rgb(221, 44, 0);
+}
+
+
+@media screen and (max-width: 368px) {
+    .car-contact {
+        height: auto;
+        width: 100%;
+    }
+    md-checkbox.checkbox-inline .md-icon {
+        margin-top: -35px;
+    }
+    md-checkbox.checkbox-inline .md-ripple-container {
+        margin-top: -35px;
+    }
+}
+
+@media screen and  (min-width: 369px) and (max-width: 700px)  {
+    .car-contact {
+        height: auto;
+        width: 100%;
+    }
+    md-checkbox.checkbox-inline .md-icon {
+        margin-top: -25px;
+    }
+    md-checkbox.checkbox-inline .md-ripple-container {
+        margin-top: -25px;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .car-contact {
+        height: auto;
+        width: 500px;
+    }
+    md-checkbox.checkbox-inline .md-icon {
+        margin-top: -25px;
+    }
+    md-checkbox.checkbox-inline .md-ripple-container {
+        margin-top: -25px;
+    }
+}
+

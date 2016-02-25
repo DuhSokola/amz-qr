@@ -1,0 +1,28 @@
+// FUNCTIONS TO USE
+// =============================================================================
+
+$font-base-size: 16px;
+
+@function rem($px, $ref: $font-base-size) {
+  @return toRem(toPx($px) / toPx($ref));
+}
+@function em($px, $ref: $font-base-size) {
+  @return toEm(toPx($px) / toPx($ref));
+}
+
+@function pxToEm($px, $ref: $font-base-size) {
+  @return toEm(toPx($px) / toPx($ref));
+}
+@function pxToRem($px) {
+  @return toRem(toPx($px) / toPx($font-base-size));
+}
+
+@function toEm($val) {
+  @return ($val + 0em);
+}
+@function toRem($val) {
+  @return ($val + 0rem);
+}
+@function toPx($val) {
+  @return ($val + 0px);
+}

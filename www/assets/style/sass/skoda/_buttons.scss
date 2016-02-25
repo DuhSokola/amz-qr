@@ -1,0 +1,64 @@
+.back-button, .variant-button {
+  color: $skoda-green;
+}
+
+.back-button-wrapper {
+  margin: 1rem 1rem 1.5rem;
+}
+
+.back-button {
+  @include arrowLeft;
+  background-image: url(../img/skoda/arrow.svg);
+  text-transform: uppercase;
+}
+
+.variant-button-wrapper {
+  text-align: center;
+}
+
+.variant-button {
+  @include fontbold;
+  @include arrowRight;
+  background-image: url(../img/skoda/arrow-right.svg);
+  margin: 2.5rem auto 2rem;
+}
+
+.leasing-button, .testdrive-button, .catalog-button {
+  @include button($bg:$black,$color:$white,$padding:.8rem 4rem .8rem 1.5rem,$display:block,$max-width:400px,$margin:.2rem auto);
+  &:after {
+    content: '';
+    position: absolute;
+    @include iconRight;
+    background-size: 1.5rem;
+    top: 0;
+    bottom: 0;
+    right: 1rem;
+    width: 2rem;
+  }
+  &:hover{
+    background-color: $dark-grey;
+  }
+}
+
+.leasing-button:after {
+  background-image: url(../img/skoda/leasing.svg);
+}
+
+.testdrive-button:after {
+  background-image: url(../img/skoda/testdrive.png);
+}
+
+.catalog-button:after {
+  background-image: url(../img/skoda/catalog.png);
+}
+
+.form button.md-primary {
+  @include button($bg:$skoda-green,$font-size:14px,$color:$white,$padding:.8rem 1.2rem,$display:block,$margin:.2rem auto 1rem,$width:150px);
+  @include fontbold;
+}
+
+.form a.md-none-theme, .form a.md-button {
+  @include button($font-size:14px,$color:$text,$padding:.8rem 1.2rem,$display:block,$margin:.2rem auto,$width:150px);
+  text-align: center;
+  border: 1px solid grey;
+}

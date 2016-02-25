@@ -1,0 +1,11 @@
+.variantlist {
+  .md-list-item-text {
+    @include fontnormal;
+    text-align: left;
+    color: $black;
+    @include audiArrow;
+    .ng-binding {
+      font-size: rem(19px) !important;
+    }
+  }
+}

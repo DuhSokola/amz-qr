@@ -1,0 +1,70 @@
+footer {
+  @include fontbold;
+  border-top: 1px solid $blue-light-grey;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background-color: $footer-background;
+  color: $footer-text;
+  a {
+    color: $footer-text;
+  }
+
+  //social media styles
+  .social-media {
+    div{
+      height: 3rem;
+      width: 3rem;
+      margin-right: .5rem;
+      &.youtube, &.newsletter, &.instagram{
+        display: none;
+      }
+    }
+    .facebook {
+      background: url(../img/volkswagen/facebook.svg) center center;
+    }
+    .google{
+      background: url(../img/volkswagen/google.svg) center center;
+    }
+    .twitter {
+      background: url(../img/volkswagen/twitter.svg) center center;
+    }
+  }
+  //language switch
+  .language {
+    position: relative;
+    .md-select-value {
+      @include button($bg:$blue-light-grey,$font-size:15,$color:$footer-text,$padding:.8rem,$border-radius:3px,$display:table,$margin:30px auto,$max-width:300px);
+      width: calc(100% - 2rem);
+    }
+    .md-select-menu-container {
+      position: absolute;
+      width: 100%;
+      top: calc(.8rem + 30px);
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      .language-options {
+        @include button($bg:$white,$font-size:15,$color:$footer-text,$display:block,$padding:.8rem,$border-radius:3px,$margin:0px auto,$max-width:300px);
+      }
+    }
+
+    .md-text {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  //impressum, terms and legal styles
+  .legal > div{
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    border-top: 1px solid $footer-line;
+    &:last-child {
+      border-bottom: 1px solid $footer-line;
+    }
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+  }
+}

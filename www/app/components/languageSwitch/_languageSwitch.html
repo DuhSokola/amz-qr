@@ -1,0 +1,7 @@
+<md-input-container ng-controller="LanguageSwitchCtrl" class="language-switch">
+    <md-select ng-model="selectedLanguage" aria-label="select language">
+        <md-option ng-repeat="lang in languages" value="{{lang}}" class="language-options">
+            {{lang}}
+        </md-option>
+    </md-select>
+</md-input-container>

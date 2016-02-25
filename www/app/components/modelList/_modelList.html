@@ -1,0 +1,13 @@
+<h1>Modelle</h1>
+<h3 translate="MODELLIST_SELECTMODEL"></h3>
+<div layout="column" ng-controller="ModelListCtrl">
+    <div>
+        <md-list-item class="md-3-line" ng-repeat="car in global.cars.models" ng-click="route(car.id)">
+            <img src="/assets/style/img/passat.jpg" alt="" />
+            <div class="md-list-item-text">
+                <span>{{car.name}}</span>
+            </div>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-list-item>
+    </div>
+</div>

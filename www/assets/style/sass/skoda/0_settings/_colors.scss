@@ -1,0 +1,28 @@
+/* CI / CD primary colors*/
+$white: #fff;
+$black: #000;
+$grey: #797979;
+$dark-grey: #555;
+$light-grey: #ccc;
+$lighter-grey: #ececec;
+$skoda-green: #4ba82e;
+
+/* CD / CD secondary colors*/
+$green: #299926;
+$light-green: #a5d396;
+$red: #da0000;
+
+/*General styles*/
+$text: #333;
+$line: $dark-grey;
+$form-line: $light-grey;
+
+/*Button styles*/
+$button: $skoda-green;
+$button-text: $white;
+$secondary-button: $lighter-grey;
+
+/*Footer styles*/
+$footer-background: $light-grey;
+$footer-text: $dark-grey;
+$footer-line: $grey;

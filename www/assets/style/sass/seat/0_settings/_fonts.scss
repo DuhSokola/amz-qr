@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'MetaProBold';
+  src: url('../fonts/seat/MetaCompPro-BoldW02Regular.woff') format('woff'),
+       url('../fonts/seat/MetaCompPro-BoldW02Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'MetaProMedium';
+  src: url('../fonts/seat/MetaCompPro-MediumW02Regular.woff') format('woff'),
+       url('../fonts/seat/MetaCompPro-MediumW02Regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'MetaWebProBook';
+  src: url('../fonts/seat/MetaWebPro-Book.woff') format('woff'),
+       url('../fonts/seat/MetaWebPro-Book.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'MetaWebProLight';
+  src: url('../fonts/seat/MetaWebPro-Light.woff') format('woff'),
+       url('../fonts/seat/MetaWebPro-Light.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'MetaWebProThin';
+  src: url('../fonts/seat/MetaWebPro-Thin.woff') format('woff'),
+       url('../fonts/seat/MetaWebPro-Thin.ttf')  format('truetype');
+}
+
+@mixin fontbold {
+  font-family: 'MetaProBold', Verdana, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontmedium {
+  font-family: 'MetaProMedium', Verdana, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontnormal {
+  font-family: 'MetaWebProBook', Verdana, Arial, Helvetica, sans-serif;
+}
+
+@mixin fontlight {
+  font-family: 'MetaWebProLight', Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+  @include fontnormal;
+}
+
+b {
+  @include fontbold;
+}
+
+h1 {
+  @include fontbold;
+  font-size: rem(36px);
+  line-height: rem(40px);
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  @include fontnormal;
+  font-size: rem(20px);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}

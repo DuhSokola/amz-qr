@@ -1,0 +1,18 @@
+.variant-button {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.md-button {
+  appearance: none;
+  background: none;
+  border: none;
+  .md-ripple-container {
+    display: none !important;
+  }
+}
+
+button, .md-button, .md-focused, .md-focused:focus {
+  cursor: pointer;
+  outline: none !important;
+}

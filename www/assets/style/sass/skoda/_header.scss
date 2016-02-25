@@ -1,0 +1,31 @@
+header {
+  @include fontbold;
+  .logo {
+    width: 140px;
+    height: 29px;
+    margin-top: 14px;
+    background-image: url(../img/skoda/logo.png);
+  }
+
+  .burger {
+    span {
+      background-color: $skoda-green;
+    }
+  }
+
+  .menu {
+    a {
+      color: $dark-grey;
+    }
+    li {
+      padding: 1.3rem 0;
+      border-top: 1px solid $light-grey;
+      @include arrowRight;
+      background-image: url(../img/skoda/arrow-right-single.svg);
+      background-size: .6rem;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}

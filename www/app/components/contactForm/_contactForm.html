@@ -1,0 +1,201 @@
+<div layout="column" ng-controller="ContactFormCtrl">
+    <div>
+        <form name="userForm"  novalidate>
+            <h1>Kontakt</h1>
+            <fieldset class="standard contact-fieldset">
+                <legend translate="CONTACT_LEGEND_CUSTOMER_DATA"></legend>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="select">
+                        <label translate="CONTACT_SALUTATION"></label>
+                        <md-select id="selectSalutation" name="salutation" ng-model="data.salutation"  required>
+                            <md-option id="selectSalutationOption" ng-click="salutationSelect()" ng-repeat="salutation in salutations" value="{{salutation.value}}">
+                                {{salutation.translation | translate}}
+                            </md-option>
+                        </md-select>
+                        <div id="salutation-error" class="error-select" ng-show="salutationIsValid === false" >
+                            <span translate="CONTACT_ERROR_SALUTATION"></span>
+                        </div>
+                    </md-input-container>
+                </div>
+
+                <div layout-gt-sm="row" class="form-name-wrapper">
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label translate="CONTACT_FIRSTNAME"></label>
+                        <input type="text" name="firstName" ng-model="data.firstName" required>
+                        <div ng-messages="data.firstName" role="alert">
+                            <div ng-message="required" ng-hide="data.firstName">
+                                <span translate="CONTACT_ERROR_FIRSTNAME"></span>
+                            </div>
+                        </div>
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label translate="CONTACT_LASTNAME"></label>
+                        <input type="text" ng-model="data.lastName" required>
+                        <div ng-messages="data.lastName" role="alert">
+                            <div ng-message="required" ng-hide="data.lastName">
+                                <span translate="CONTACT_ERROR_LASTNAME"></span>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div layout-gt-sm="row" class="form-street-wrapper">
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label translate="CONTACT_STREET"></label>
+                        <input type="text" ng-model="data.street" required>
+                        <div ng-messages="data.street" role="alert">
+                            <div ng-message="required" ng-hide="data.street">
+                                <span translate="CONTACT_ERROR_STREET"></span>
+                            </div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-block" flex-xs-sm>
+                        <label translate="CONTACT_STREET_NR"></label>
+                        <input type="text" ng-model="data.streetNr" required>
+                        <div ng-messages="data.streetNr" role="alert">
+                            <div ng-message="required" ng-hide="data.streetNr">
+                                <span translate="CONTACT_ERROR_STREET_NR"></span>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div layout-gt-sm="row" class="form-place-wrapper">
+                    <md-input-container class="md-block" flex-xs-sm>
+                        <label translate="CONTACT_ZIP"></label>
+                        <input type="number" ng-model="data.zip" required>
+                        <div ng-messages="data.zip" role="alert">
+                            <div ng-message="required" ng-hide="data.zip">
+                                <span translate="CONTACT_ERROR_ZIP"></span>
+                            </div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label translate="CONTACT_CITY"></label>
+                        <input type="text" ng-model="data.city" required>
+                        <div ng-messages="data.city" role="alert">
+                            <div ng-message="required" ng-hide="data.city">
+                                <span translate="CONTACT_ERROR_CITY"></span>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div layout-gt-sm="row" class="form-phone-wrapper">
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label translate="CONTACT_TELEPHONE"></label>
+                        <input type="text" ng-model="data.telephone" required>
+                        <div ng-messages="data.telephone" role="alert">
+                            <div ng-message="required" ng-hide="data.telephone">
+                                <span translate="CONTACT_ERROR_TELEPHONE"></span>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+                <div layout-gt-sm="row" class="form-mail-wrapper">
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label translate="CONTACT_EMAIL"></label>
+                        <input type="text" ng-model="data.email" pattern="{{emailPattern}}" required>
+                        <div ng-messages="data.email" role="alert">
+                            <div ng-message="required" ng-hide="data.email">
+                                <span translate="CONTACT_ERROR_EMAIL"></span>
+                            </div>
+                        </div>
+                    </md-input-container>
+                </div>
+            </fieldset>
+
+            <fieldset class="standard contact-fieldset">
+                <legend translate="CONTACT_LEGEND_CATALOG"></legend>
+                <div layout="column" layout-wrap layout-xs="row" layout-gt-xs="row">
+                    <div flex-gt-xs="50" flex-xs="60">
+                        <md-checkbox id="checkbox-catalog" ng-model="data.catalog" aria-label="Checkbox 1" class="md-primary" required>
+                            <input type="checkbox"></input>
+                            <span translate="CONTACT_CATALOG"></span>
+                        </md-checkbox>
+                    </div>
+                    <div flex-gt-xs="50" flex-xs="40">
+                        <md-radio-group ng-model="data.catalogTyp">
+                            <md-radio-button name="radio-catalog" value="electronic" class="md-primary" ng-disabled="!data.catalog">
+                                <input type="radio"></input>
+                                <span translate="CONTACT_CATALOG_ELECTRONIC"></span>
+                            </md-radio-button>
+                            <md-radio-button name="radio-catalog" value="printed" class="md-primary" ng-disabled="!data.catalog">
+                                <input type="radio"></input>
+                                <span translate="CONTACT_CATALOG_PRINTED"></span>
+                            </md-radio-button>
+                        </md-radio-group>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="standard contact-fieldset">
+                <legend translate="CONTACT_LEGEND_TESTDRIVE"></legend>
+                <div layout="column" layout-wrap layout-xs="row" layout-gt-xs="row">
+                    <!--<div flex-gt-xs="50" flex-xs="60">-->
+                    <div flex="100">
+                        <md-checkbox id="checkbox-testdrive" ng-model="data.testdrive" aria-label="Checkbox 1" class="md-primary">
+                            <input type="checkbox"></input>
+                            <span translate="CONTACT_TESTDRIVE"></span>
+                        </md-checkbox>
+                    </div>
+                    <!--<div flex-gt-xs="50" flex-xs="40">
+                        <md-radio-group ng-model="data.testdriveTyp">
+                            <md-radio-button name="radio-testdrive" ng-disabled="!data.testdrive" value="email" class="md-primary"><span
+                                    translate="CONTACT_TESTDRIVE_EMAIL"> </span></md-radio-button>
+                            <md-radio-button name="radio-testdrive" ng-disabled="!data.testdrive" value="telephone" class="md-primary"><span
+                                    translate="CONTACT_TESTDRIVE_TELEFON"> </span></md-radio-button>
+                        </md-radio-group>
+                    </div>-->
+                </div>
+            </fieldset>
+
+            <!--<fieldset class="standard contact-fieldset">
+                <legend translate="CONTACT_LEGEND_LEASING"></legend>
+                <div layout="column" layout-wrap layout-xs="row" layout-gt-xs="row">
+                    <div flex-gt-xs="50" flex-xs="60">
+                        <md-checkbox id="checkbox-leasing" ng-model="data.leasing" aria-label="Checkbox 1" class="md-primary">
+                            <span translate="CONTACT_LEASING"></span>
+                        </md-checkbox>
+                    </div>
+                    <div flex-gt-xs="50" flex-xs="40">
+                        <md-radio-group ng-model="data.leasingTyp">
+                            <md-radio-button name="radio-leasing" value="email" class="md-primary" ng-disabled="!data.leasing"><span
+                                    translate="CONTACT_LEASING_EMAIL"> </span></md-radio-button>
+                            <md-radio-button name="radio-leasing" value="telephone" class="md-primary" ng-disabled="!data.leasing"><span
+                                    translate="CONTACT_LEASING_TELEPHONE"> </span></md-radio-button>
+                        </md-radio-group>
+                    </div>
+                </div>
+            </fieldset>-->
+            <fieldset class="standard contact-fieldset">
+                <legend translate="CONTACT_LEGEND_NEWSLETTER"></legend>
+                <div flex-gt-xs flex="100">
+                    <md-checkbox id="checkbox-newsletter" ng-model="data.newsletter" aria-label="Checkbox 1" class="md-primary" required>
+                        <input type="checkbox"></input>
+                        <span translate="CONTACT_NEWSLETTER"> </span>
+                    </md-checkbox>
+                </div>
+            </fieldset>
+            <fieldset class="standard contact-fieldset">
+                <legend translate="CONTACT_LEGEND_PRIVACY"></legend>
+                <div flex-gt-xs flex="100">
+                    <md-checkbox id="checkbox-privacy" ng-model="data.privacyAccepted" aria-label="Checkbox 1" class="md-primary">
+                        <input type="checkbox"></input>
+                        <span translate="CONTACT_PRIVACY"> </span>
+                    </md-checkbox>
+                    <!--<div ng-show="!data.privacyAccepted && data.privacyAccepted !== ''">
+                        <span class="error-text" translate="CONTACT_ERROR_PRIVACY"></span>
+                    </div>-->
+                </div>
+            </fieldset>
+            <div layout="row">
+                <!-- <md-button type="button" href="#/leasingCalculator/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" class="md-raised" translate="CONTACT_BUTTON_BACK"
+                           aria-label="Back" ng-if="global.params.selectedMode == 'leasing'"></md-button> -->
+                <!-- <md-button type="button" href="#/landingPage/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{global.params.selectedModelVariant}}" class="md-raised" translate="CONTACT_BUTTON_BACK"
+                           aria-label="Back" ng-if="global.params.selectedMode != 'leasing'"></md-button> -->
+                <md-button type="submit" class="md-raised md-primary" translate="CONTACT_BUTTON_SUBMIT"
+                           aria-label="Submit" ng-click="submit()"></md-button>
+            </div>
+        </form>
+    </div>
+</div>

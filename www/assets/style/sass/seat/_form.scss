@@ -1,0 +1,187 @@
+.slider {
+  .ng-binding {
+    @include fontbold;
+    font-size: rem(15px);
+  }
+}
+
+.ng-isolate-scope {
+  height: 60px;
+}
+
+.md-track, .md-thumb-container {
+  background: $slider-bg;
+}
+
+.md-track, .md-track-container {
+  height: 15px;
+}
+
+.md-track-fill, .md-thumb {
+  background: $seat-red;
+  border-radius: 7.5px;
+}
+
+&.md-min {
+  .md-track-fill {
+    &:after {
+      right: -15px;
+    }
+
+    &:before {
+      right: -11px;
+    }
+  }
+}
+
+.md-track-fill {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 15px;
+    background: $seat-red;
+    border-radius: 7.5px;
+  }
+
+  &:before {
+    z-index: 2;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 7px;
+    height: 7px;
+    background: $slider-bg;
+    border-radius: 50%;
+  }
+}
+
+.md-thumb {
+  display: none;
+}
+
+.md-track-container {
+  border-radius: 7.5px;
+}
+
+.total-value {
+  @include fontbold;
+  color: $seat-red;
+}
+
+.form {
+  .layout-row {
+    border-color: $form-line !important;
+  }
+  fieldset legend {
+    @include fontbold;
+  }
+}
+
+.form h1 {
+  @include fontlight;
+  font-size: rem(27px);
+  text-transform: uppercase;
+  color: $text;
+  margin-top: 1.5rem;
+}
+
+// TEXT INPUT
+// =============================================================================
+input[type=text],input[type=number] {
+    border: 1px solid $grey;
+    .md-input-focused & {
+      border-color: $seat-red;
+    }
+  }
+
+// CHECKBOX
+// =============================================================================
+md-checkbox .md-label {
+  &:before {
+    border: 1px solid $grey;
+  }
+}
+
+md-checkbox[aria-checked="true"] .md-label {
+  &:before {
+    background-color: $seat-red;
+  }
+  &:after {
+    border: 3px solid $white;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+// RADIO BUTTON
+// =============================================================================
+md-radio-button .md-label {
+  &:before {
+    border: 1px solid $grey;
+  }
+}
+
+md-radio-button[aria-checked="true"] .md-label {
+  &:before {
+    border: 5px solid $seat-black;
+  }
+}
+
+md-radio-button[aria-disabled="true"] .md-label {
+  &:before {
+    border: 1px solid $lighter-grey;
+  }
+}
+
+// MESSAGES INPUT VALIDATION
+// =============================================================================
+md-input-container.md-input-invalid {
+  .md-input-messages-animation {
+    span {
+      color: $seat-red;
+    }
+  }
+}
+
+
+// SELECT
+// =============================================================================
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  border: 1px solid $form-line;
+  border-radius: 3px;
+  background: url(../img/seat/arrow-dropdown.svg) no-repeat right 1rem center;
+  background-size: 0.8rem;
+}
+
+md-select-menu {
+  md-content {
+    border: 1px solid $form-line;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
+}
+.select {
+  .md-placeholder, label {
+    border-top: 1px solid $form-line;
+    border-bottom: 1px solid $form-line;
+  }
+}
+
+
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $lighter-grey;
+  }
+  span {
+    top: 4px;
+  }
+}

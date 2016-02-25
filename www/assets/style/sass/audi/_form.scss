@@ -1,0 +1,163 @@
+.slider {
+  .ng-binding {
+    @include fontbold;
+    font-size: rem(15px);
+  }
+}
+
+.md-track, .md-thumb-container {
+  background: $slider-bg;
+}
+
+.md-track-fill, .md-thumb {
+  background: $audi-red;
+}
+
+.md-thumb {
+  border-radius: 50%;
+}
+
+.md-track-container {
+  border-radius: 0px;
+}
+
+fieldset {
+  legend {
+    @include fontextendedbold;
+  }
+}
+.total-value {
+  @include fontbold;
+  color: $audi-red;
+}
+
+.form {
+  h1 {
+    font-size: rem(22px);
+  }
+
+  .layout-row {
+    border-color: $form-line !important;
+  }
+  fieldset legend {
+    @include fontextendedbold;
+  }
+  // TEXT INPUT
+  // =============================================================================
+  input[type=text], input[type=number] {
+    border: 1px solid $form-line;
+    border-radius: 0px;
+    .md-input-focused & {
+      border-color: $audi-red;
+    }
+  }
+  .layout-row.total-outer-wrapper {
+    border-bottom: 2px solid $form-line !important;
+  }
+}
+
+// CHECKBOX
+// =============================================================================
+md-checkbox .md-label {
+  &:before {
+    border: 2px solid $black;
+  }
+}
+md-checkbox[aria-checked="true"] .md-label {
+  &:before {
+    background-color: $audi-red;
+  }
+  &:after {
+    border: 2px solid $white;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+// RADIO BUTTON
+// =============================================================================
+md-radio-button .md-label {
+  &:before {
+    border: 2px solid $black;
+  }
+}
+md-radio-button[aria-checked="true"] .md-label {
+  &:before {
+    background-color: $audi-red;
+    border: none;
+  }
+  &:after {
+    content: '';
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    background: transparent;
+    transform: rotate(-45deg);
+    border: 2px solid $white;
+    border-top: none;
+    border-right: none;
+  }
+}
+md-radio-button[aria-disabled="true"] .md-label {
+  &:before {
+    border: 2px solid $lighter-grey;
+  }
+}
+
+
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $lighter-grey;
+  }
+}
+
+// MESSAGES INPUT VALIDATION
+// =============================================================================
+md-input-container.md-input-invalid {
+  .md-input-messages-animation {
+    span {
+      color: $audi-red;
+    }
+  }
+}
+
+// Error Styles
+// =============================================================================
+.error-text {
+  color: $audi-red;
+}
+
+
+// SELECT
+// =============================================================================
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  border: 1px solid $form-line;
+  background: url(../img/audi/arrow-dropdown.svg) no-repeat right 1rem center;
+  background-size: 0.8rem;
+  border-radius: 0px;
+}
+
+md-input-container {
+  .md-select-placeholder span, .md-text {
+    font-size: rem(14px);
+    color: grey;
+  }
+}
+
+md-select-menu {
+  md-content {
+    border: 1px solid $form-line;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
+}
+.select {
+  .md-placeholder, label {
+    border-top: 1px solid $form-line;
+    border-bottom: 1px solid $form-line;
+  }
+}

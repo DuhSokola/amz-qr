@@ -1,0 +1,43 @@
+.variant-button, .back-button {
+  text-transform: uppercase;
+}
+
+.variant-button {
+  @include button($bg:$button,$font-size:15,$color:$white,$padding:16px 20px,$border-radius:3px,$display:table,$margin:15px auto 30px);
+  @include fontbold;
+}
+
+.back-button {
+  @include button($color:$button,$font-size:15,$display:block,$margin:1rem 0 0 1rem);
+  @include arrowLeft($padding:1rem,$bgSize:.5rem,$bgPosition:0 4px);
+  background-image: url(../img/volkswagen/arrow.svg);
+}
+
+.leasing-button, .testdrive-button, .catalog-button {
+  @include button($font-size:22,$padding:10px 0,$display:block,$max-width:400px,$margin:1rem auto);
+  @include iconLeft(2.85rem,$bgPosition:0 8px);
+}
+
+.leasing-button {
+  background-image: url(../img/volkswagen/leasing.png);
+}
+
+.testdrive-button {
+  background-image: url(../img/volkswagen/probefahrt.png);
+}
+
+.catalog-button {
+  background-image: url(../img/volkswagen/catalog.png);
+}
+
+.form button.md-primary {
+  @include button($bg:$vw-blue,$color:$white,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto,$border-radius:3px,$max-width:300px,$width:100%);
+  @include fontbold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form a.md-none-theme, .form a.md-button {
+  @include button($bg:$secondary-button,$color:$black,$font-size:14px,$padding:16px,$display:block,$margin:0.5rem auto,$border-radius:3px,$max-width:300px,$width:100%);
+  text-align: center;
+}

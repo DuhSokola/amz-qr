@@ -1,0 +1,40 @@
+@mixin button($bg:false,$hover:false,$active:false,$padding:0,$font-size:16px,$position:relative,
+  $color:#000,$border-radius:false,$display:inline-block,$max-width:none,$width:auto,$margin:0) {
+  display: $display;
+  position: $position;
+  padding: $padding;
+  font-size: rem($font-size);
+  color: $color;
+  text-decoration: none;
+  overflow: hidden;
+  background: $bg;
+  max-width: $max-width;
+  width: $width;
+  margin: $margin;
+  @if $border-radius {
+    border-radius: $border-radius;
+  }
+
+  span {
+    color: $color;
+  }
+
+  &:hover {
+    cursor: pointer;
+    @if $hover {
+      $bg: $hover;
+    }
+    @if $bg {
+      background-color: darken($bg,10);
+    }
+  }
+
+  &:active {
+    @if $active {
+      $bg: $active;
+    }
+    @if $bg {
+      background-color: darken($bg,20);
+    }
+  }
+}

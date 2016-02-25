@@ -1,0 +1,142 @@
+.slider {
+  .ng-binding {
+    @include fontbold;
+    font-size: rem(15px);
+  }
+}
+
+.md-track, .md-thumb-container {
+  background: $light-grey;
+}
+
+.md-track-fill, .md-thumb {
+  background: $skoda-green;
+}
+
+.md-thumb {
+  border-radius: 50%;
+}
+
+.md-track-container {
+  border-radius: 4px;
+}
+
+.total-value {
+  @include fontbold;
+  color: $skoda-green;
+}
+
+.form {
+  .layout-row {
+    border-color: $white !important;
+  }
+  fieldset legend {
+    @include fontbold;
+  }
+}
+
+// TEXT INPUT
+// =============================================================================
+input[type=text], input[type=number] {
+    border: 1px solid $form-line;
+    .md-input-focused & {
+      border-color: $skoda-green;
+    }
+  }
+
+// CHECKBOX
+// =============================================================================
+md-checkbox .md-label {
+  &:before {
+    border: 1px solid $form-line;
+  }
+}
+md-checkbox[aria-checked="true"] .md-label {
+  &:before {
+    border: 1px solid $form-line;
+  }
+  &:after {
+    border: 3px solid $skoda-green;
+    border-top: none;
+    border-right: none;
+  }
+}
+
+// RADIO BUTTON
+// =============================================================================
+md-radio-button .md-label {
+  &:before {
+    border: 1px solid $form-line;
+  }
+}
+md-radio-button[aria-checked="true"] .md-label {
+  &:before {
+    background-color: $skoda-green;
+    border: 5px solid $white;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $form-line;
+    border-radius: 50%;
+  }
+}
+md-radio-button[aria-disabled="true"] .md-label {
+  &:before {
+    border: 1px solid $lighter-grey;
+  }
+}
+
+
+// CONTACT, CATALOG AND TESTDRIVE FORM FIELDSET STYLE
+// =============================================================================
+
+.contact-form fieldset.contact-fieldset {
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $lighter-grey;
+  }
+}
+
+// MESSAGES INPUT VALIDATION
+// =============================================================================
+md-input-container.md-input-invalid {
+  .md-input-messages-animation {
+    span {
+      color: $skoda-green;
+    }
+  }
+}
+
+// SELECT
+// =============================================================================
+md-select.ng-invalid-required, md-select.ng-valid-required {
+  border: 1px solid $form-line;
+  border-radius: 3px;
+  background: url(../img/skoda/arrow-dropdown.svg) no-repeat right 1rem center;
+  background-size: 0.8rem;
+}
+
+md-input-container {
+  .md-select-placeholder span, .md-text {
+    font-size: rem(16px);
+    color: grey;
+  }
+}
+
+md-select-menu {
+  md-content {
+    border: 1px solid $grey;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.1);
+  }
+}
+.select {
+  .md-placeholder, label {
+    border-top: 1px solid $form-line;
+    border-bottom: 1px solid $form-line;
+  }
+}

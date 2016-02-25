@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'VWHeadWebBold';
+  src: url('../fonts/volkswagen/VWHeadWeb-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/volkswagen/VWHeadWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/volkswagen/VWHeadWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/volkswagen/VWHeadWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/volkswagen/VWHeadWeb-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/volkswagen/VWHeadWeb-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'VWTextWebRegular';
+  src: url('../fonts/volkswagen/VWTextWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/volkswagen/VWTextWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/volkswagen/VWTextWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/volkswagen/VWTextWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/volkswagen/VWTextWeb-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/volkswagen/VWTextWeb-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@mixin fontbold {
+  font-family: 'VWHeadWebBold',Arial, Helvetica, sans-serif;
+}
+
+@mixin fontnormal {
+  font-family: 'VWTextWebRegular',Arial, Helvetica, sans-serif;
+}
+
+body {
+  @include fontnormal;
+}
+
+b {
+  @include fontbold;
+}
+
+h1 {
+  @include fontbold;
+  font-size: rem(28px);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  @include fontbold;
+  font-size: rem(20px);
+}
+
+h3 {
+  @include fontnormal;
+  font-size: rem(20px);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}

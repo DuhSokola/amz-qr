@@ -1,0 +1,59 @@
+.car-image {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 101%;
+    height: 10vw;
+    bottom: -5vw;
+    background: $white;
+    left: 0;
+    transform: rotate(-5deg);
+  }
+}
+
+.image-area-top h1, .image-area-top h3{
+  color: $seat-black;
+}
+
+.image-area-top {
+  position: relative;
+  margin: 0;
+
+  h1 {
+    z-index: 2;
+    position: absolute;
+    top: rem(40px);
+    right: 1rem;
+    color: $white;
+  }
+
+  h3 {
+    z-index: 2;
+    position: absolute;
+    top: rem(94px);
+    right: 1rem;
+    color: $white;
+  }
+}
+
+.variant-button-wrapper {
+  position: absolute;
+  top: rem(250px);
+  right: 1rem;
+  text-align: right;
+}
+
+.car-image {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 75%);
+  }
+}
