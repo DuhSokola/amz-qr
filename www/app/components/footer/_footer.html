@@ -15,22 +15,25 @@
     <div class="legal">
         <div layout="row" layout-align="center">
             <md-button class="md-primary" href="#/impressum" aria-label="models">
-                <span>Impressum</span>
+                <span translate="FOOTER_IMPRESSUM"></span>
             </md-button>
         </div>
         <div layout="row" layout-align="center">
             <md-button class="md-primary" href="#/terms" aria-label="models">
-                <span>Nutzungsbedingungen</span>
+                <span translate="FOOTER_PRIVACY"></span>
             </md-button>
         </div>
         <div layout="row" layout-align="center">
             <md-button class="md-primary" href="#/policy" aria-label="models">
-                <span>Datenschutzerklärung</span>
+                <span translate="FOOTER_CONDITION"></span>
             </md-button>
         </div>
     </div>
 
     <div layout="row" layout-align="center" class="copyright">
-        <span>© Marke AG. Alle Rechte vorbehalten.</span>
+        <span ng-if="selectedCSSFile === 'volkswagen'" translate="FOOTER_COPYRIGHT_VW"></span>
+        <span ng-if="selectedCSSFile === 'audi'" translate="FOOTER_COPYRIGHT_AUDI"></span>
+        <span ng-if="selectedCSSFile === 'skoda'" translate="FOOTER_COPYRIGHT_SKODA"></span>
+        <span ng-if="selectedCSSFile === 'seat'" translate="FOOTER_COPYRIGHT_SEAT"></span>
     </div>
 </footer>

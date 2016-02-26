@@ -92,10 +92,13 @@
             "CONTACT_ERROR_NEWSLETTER": "Newsletter pflicht",
             "CONTACT_ERROR_PRIVACY": "Datenschutzbestimmung pflicht",
 
-            "FOOTER_IMPRESSUM": "",
-            "FOOTER_PRIVACY": "",
-            "FOOTER_CONDITION": "",
-            "FOOTER_COPYRIGHT": "",
+            "FOOTER_IMPRESSUM": "Impressum",
+            "FOOTER_PRIVACY": "Nutzungsbedingungen",
+            "FOOTER_CONDITION": "Datenschutzerklärung",
+            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG",
+            "FOOTER_COPYRIGHT_AUDI": "© Audi AG",
+            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG",
+            "FOOTER_COPYRIGHT_SEAT": "© Seat AG"
         });
 
         $translateProvider.translations('FR', {
@@ -171,7 +174,15 @@
             "CONTACT_ERROR_TESTDRIVE": "Essai routier obligatoire",
             "CONTACT_ERROR_LEASING": "Leasing obligatoire",
             "CONTACT_ERROR_NEWSLETTER": "Newsletter obligatoire",
-            "CONTACT_ERROR_PRIVACY": "Dispositions sur la protection des données obligatoires"
+            "CONTACT_ERROR_PRIVACY": "Dispositions sur la protection des données obligatoires",
+
+            "FOOTER_IMPRESSUM": "Empreinte",
+            "FOOTER_PRIVACY": "Conditions d'utilisation",
+            "FOOTER_CONDITION": "Politique de confidentialité",
+            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG",
+            "FOOTER_COPYRIGHT_AUDI": "© Audi AG",
+            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG",
+            "FOOTER_COPYRIGHT_SEAT": "© Seat AG"
         });
 
         $translateProvider.translations('IT', {
@@ -247,7 +258,15 @@
             "CONTACT_ERROR_TESTDRIVE": "Giro di prova obbligatorio",
             "CONTACT_ERROR_LEASING": "Leasing obbligatorio",
             "CONTACT_ERROR_NEWSLETTER": "Newsletter obbligatorio",
-            "CONTACT_ERROR_PRIVACY": "Disposizione sulla protezione dei dati obbligatorio"
+            "CONTACT_ERROR_PRIVACY": "Disposizione sulla protezione dei dati obbligatorio",
+
+            "FOOTER_IMPRESSUM": "Informazioni Legali",
+            "FOOTER_PRIVACY": "Condizioni d'uso",
+            "FOOTER_CONDITION": "Privacy Policy",
+            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG",
+            "FOOTER_COPYRIGHT_AUDI": "© Audi AG",
+            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG",
+            "FOOTER_COPYRIGHT_SEAT": "© Seat AG"
         });
 
         $translateProvider.translations('EN', {
@@ -323,15 +342,21 @@
             "CONTACT_ERROR_TESTDRIVE": "Test drive (mandatory)",
             "CONTACT_ERROR_LEASING": "Leasing (mandatory)",
             "CONTACT_ERROR_NEWSLETTER": "Newsletter (mandatory)",
-            "CONTACT_ERROR_PRIVACY": "Data protection provisions (mandatory)"
+            "CONTACT_ERROR_PRIVACY": "Data protection provisions (mandatory)",
+
+            "FOOTER_IMPRESSUM": "Imprint",
+            "FOOTER_PRIVACY": "Terms of Use",
+            "FOOTER_CONDITION": "Privacy Policy",
+            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG",
+            "FOOTER_COPYRIGHT_AUDI": "© Audi AG",
+            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG",
+            "FOOTER_COPYRIGHT_SEAT": "© Seat AG"
         });
         $translateProvider.preferredLanguage('EN');
     });
 
     app.run(function ($rootScope) {
-        $rootScope.$watch();
-
-        $rootScope.selectedCSSFile = 'seat';
+        $rootScope.selectedCSSFile = 'volkswagen';
 
         $rootScope.carsApi = 'https://www.leadcollector.amag.ch/readAllModelVariants';
 
