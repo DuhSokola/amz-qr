@@ -140,3 +140,16 @@ md-select-menu {
     border-bottom: 1px solid $form-line;
   }
 }
+
+
+// INFO POPUP
+// =============================================================================
+.info-popup-button {
+  background: $skoda-green;
+}
+
+.info-popup {
+  .close {
+    background-image: url(../img/skoda/close.svg);
+  }
+}

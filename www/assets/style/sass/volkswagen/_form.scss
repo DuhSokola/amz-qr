@@ -166,3 +166,16 @@ md-select-menu {
     border-bottom: 1px solid $light-grey;
   }
 }
+
+
+// INFO POPUP
+// =============================================================================
+.info-popup-button {
+  background: $vw-blue;
+}
+
+.info-popup {
+  .close {
+    background-image: url(../img/volkswagen/close.svg);
+  }
+}

@@ -185,3 +185,31 @@ md-select-menu {
     top: 4px;
   }
 }
+
+
+
+// INFO POPUP
+// =============================================================================
+.info-popup-button {
+  line-height: 32px;
+  top: 1px;
+  background: $seat-red;
+}
+
+.info-popup {
+  p {
+    line-height: 1.3em;
+  }
+
+  .close {
+    top: 1.4rem;
+  }
+
+  h2 {
+    font-size: rem(22px);
+  }
+
+  .close {
+    background-image: url(../img/seat/close.svg);
+  }
+}

@@ -13,7 +13,7 @@
 
 
     <link rel="stylesheet" href="/assets/style/css/main.css">
-    <link rel="stylesheet" href="/assets/style/css/audi.css">
+    <link rel="stylesheet" href="/assets/style/css/seat.css">
     <!--<link rel="stylesheet" href="/assets/style/css/volkswagen.css">
     <link rel="stylesheet" href="/assets/style/css/seat.css">
     <link rel="stylesheet" href="/assets/style/css/skoda.css">-->
@@ -78,6 +78,16 @@
     $('.burger').click(function(e) {
         e.preventDefault();
       $('.header-wrapper').toggleClass('active');
+    });
+
+    $('.info-popup-button').click(function(e) {
+        e.preventDefault();
+      $(this).next('.info-popup').toggleClass('active');
+    });
+
+    $('.info-popup .close').click(function(e) {
+        e.preventDefault();
+      $(this).parent().toggleClass('active');
     });
   });
 </script>
