@@ -90,7 +90,12 @@
             "CONTACT_ERROR_TESTDRIVE": "Probefahrt pflicht",
             "CONTACT_ERROR_LEASING": "Leasing pflicht",
             "CONTACT_ERROR_NEWSLETTER": "Newsletter pflicht",
-            "CONTACT_ERROR_PRIVACY": "Datenschutzbestimmung pflicht"
+            "CONTACT_ERROR_PRIVACY": "Datenschutzbestimmung pflicht",
+
+            "FOOTER_IMPRESSUM": "",
+            "FOOTER_PRIVACY": "",
+            "FOOTER_CONDITION": "",
+            "FOOTER_COPYRIGHT": "",
         });
 
         $translateProvider.translations('FR', {
@@ -323,10 +328,10 @@
         $translateProvider.preferredLanguage('EN');
     });
 
-    app.run(function ($rootScope,$state, $stateParams) {
+    app.run(function ($rootScope) {
         $rootScope.$watch();
 
-        $rootScope.cssFileName = 'main';
+        $rootScope.selectedCSSFile = 'seat';
 
         $rootScope.carsApi = 'https://www.leadcollector.amag.ch/readAllModelVariants';
 
@@ -415,6 +420,23 @@
         $rootScope.$on('$stateChangeSuccess', function (ev, to, toParams, from, fromParams) {
             $rootScope.previousState = from.name;
             $rootScope.currentState = to.name;
+        });
+
+        $rootScope.$on('$stateChangeStart', function (ev, to, toParams, from, fromParams) {
+            console.log(toParams);
+            if(toParams.brand.toLowerCase() === 'vw'){
+                $rootScope.selectedCSSFile = 'volkswagen';
+            }else if(toParams.brand.toLowerCase() === 'audi'){
+                $rootScope.selectedCSSFile = 'audi';
+            }else if(toParams.brand.toLowerCase() === 'skoda'){
+                $rootScope.selectedCSSFile = 'skoda';
+            }else if(toParams.brand.toLowerCase() === 'seat') {
+                $rootScope.selectedCSSFile = 'seat';
+            }else if(toParams.brand.toLowerCase() === 'vwnf'){
+                    $rootScope.selectedCSSFile = 'volkswagen';
+            }else{
+                $rootScope.selectedCSSFile = 'volkswagen';
+            }
         });
 
     }]);

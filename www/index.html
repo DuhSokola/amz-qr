@@ -13,7 +13,9 @@
 
 
     <link rel="stylesheet" href="/assets/style/css/main.css">
-    <link rel="stylesheet" href="/assets/style/css/seat.css">
+    <link rel="stylesheet" ng-href="/assets/style/css/{{selectedCSSFile}}.css">
+
+    <!--<link rel="stylesheet" href="/assets/style/css/audi.css">-->
     <!--<link rel="stylesheet" href="/assets/style/css/volkswagen.css">
     <link rel="stylesheet" href="/assets/style/css/seat.css">
     <link rel="stylesheet" href="/assets/style/css/skoda.css">-->
@@ -32,7 +34,6 @@
 <script src="externals/bower_components/angular-animate/angular-animate.js"></script>
 <script src="externals/bower_components/angular-aria/angular-aria.js"></script>
 <script src="externals/bower_components/angular-messages/angular-messages.js"></script>
-<script src="externals/bower_components/angular-material/angular-material.js"></script>
 <script src="externals/bower_components/angular-translate/angular-translate.js"></script>
 <script src="externals/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="externals/bower_components/angular-resource/angular-resource.js"></script>
@@ -43,6 +44,8 @@
 <script src="externals/bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="externals/bower_components/ngSanitize/index.js"></script>
 <!-- endbower -->
+
+    <script src="externals/angular-material.js"></script>
 
 <!-- inject:js -->
 <script src="/app/app.constants.js"></script>
