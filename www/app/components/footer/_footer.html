@@ -1,11 +1,29 @@
 <footer>
     <div layout="row" layout-align="center" class="social-media">
-        <div class="facebook" ></div>
-        <div class="google"></div>
-        <div class="instagram"></div>
-        <div class="twitter"></div>
-        <div class="youtube"></div>
-        <div class="newsletter"></div>
+        <div class="facebook" ng-if="selectedCSSFile === 'volkswagen'" ></div>
+        <div class="facebook" ng-if="selectedCSSFile === 'audi'" href="https://www.facebook.com/audiswitzerland/"></div>
+        <div class="facebook" ng-if="selectedCSSFile === 'skoda'" href="https://www.facebook.com/skodaswitzerland"></div>
+        <div class="facebook" ng-if="selectedCSSFile === 'seat'" href="https://www.facebook.com/SEAT.Switzerland/"></div>
+        <div class="google" ng-if="selectedCSSFile === 'volkswagen'" href=""></div>
+        <div class="google" ng-if="selectedCSSFile === 'audi'" href=""></div>
+        <div class="google" ng-if="selectedCSSFile === 'skoda'" href=""></div>
+        <div class="google" ng-if="selectedCSSFile === 'seat'" href=""></div>
+        <div class="instagram" ng-if="selectedCSSFile === 'volkswagen'" href=""></div>
+        <div class="instagram" ng-if="selectedCSSFile === 'audi'" href=""></div>
+        <div class="instagram" ng-if="selectedCSSFile === 'skoda'" href=""></div>
+        <div class="instagram" ng-if="selectedCSSFile === 'seat'" href=""></div>
+        <div class="twitter" ng-if="selectedCSSFile === 'volkswagen'" href=""></div>
+        <div class="twitter" ng-if="selectedCSSFile === 'audi'" href=""></div>
+        <div class="twitter" ng-if="selectedCSSFile === 'skoda'" href=""></div>
+        <div class="twitter" ng-if="selectedCSSFile === 'seat'" href=""></div>
+        <div class="youtube" ng-if="selectedCSSFile === 'volkswagen'" href=""></div>
+        <div class="youtube" ng-if="selectedCSSFile === 'audi'" href=""></div>
+        <div class="youtube" ng-if="selectedCSSFile === 'skoda'" href=""></div>
+        <div class="youtube" ng-if="selectedCSSFile === 'seat'" href=""></div>
+        <div class="newsletter" ng-if="selectedCSSFile === 'volkswagen'" href=""></div>
+        <div class="newsletter" ng-if="selectedCSSFile === 'audi'" href=""></div>
+        <div class="newsletter" ng-if="selectedCSSFile === 'skoda'" href=""></div>
+        <div class="newsletter" ng-if="selectedCSSFile === 'seat'" href=""></div>
     </div>
 
     <div ui-view="language" class="language"></div>
