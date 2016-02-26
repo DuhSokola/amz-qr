@@ -5,6 +5,8 @@
 
     var app = angular.module('app.footer.ctrl', dependencies);
 
-    app.controller('FooterCtrl', ['$rootScope', '$scope', '$state', '$stateParams']);
+    app.controller('FooterCtrl', ['$rootScope', '$scope', '$state', '$stateParams', function(){
+
+    }]);
 
 }());

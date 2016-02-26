@@ -95,12 +95,10 @@
             "FOOTER_IMPRINT": "Impressum",
             "FOOTER_PRIVACY": "Nutzungsbedingungen",
             "FOOTER_CONDITION": "Datenschutzerklärung",
-            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG",
-            "FOOTER_COPYRIGHT_AUDI": "© Audi AG",
-            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG",
-            "FOOTER_COPYRIGHT_SEAT": "© Seat AG",
-
-            "FOOTER_POPUP_IMPRESSUM": "© Seat AG"
+            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG 2016",
+            "FOOTER_COPYRIGHT_AUDI": "© Audi AG 2016",
+            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG 2016",
+            "FOOTER_COPYRIGHT_SEAT": "© Seat AG 2016"
         });
 
         $translateProvider.translations('FR', {
@@ -181,10 +179,10 @@
             "FOOTER_IMPRINT": "Empreinte",
             "FOOTER_PRIVACY": "Conditions d'utilisation",
             "FOOTER_CONDITION": "Politique de confidentialité",
-            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG",
-            "FOOTER_COPYRIGHT_AUDI": "© Audi AG",
-            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG",
-            "FOOTER_COPYRIGHT_SEAT": "© Seat AG"
+            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG 2016",
+            "FOOTER_COPYRIGHT_AUDI": "© Audi AG 2016",
+            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG 2016",
+            "FOOTER_COPYRIGHT_SEAT": "© Seat AG 2016"
         });
 
         $translateProvider.translations('IT', {
@@ -265,10 +263,10 @@
             "FOOTER_IMPRINT": "Informazioni Legali",
             "FOOTER_PRIVACY": "Condizioni d'uso",
             "FOOTER_CONDITION": "Privacy Policy",
-            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG",
-            "FOOTER_COPYRIGHT_AUDI": "© Audi AG",
-            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG",
-            "FOOTER_COPYRIGHT_SEAT": "© Seat AG"
+            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG 2016",
+            "FOOTER_COPYRIGHT_AUDI": "© Audi AG 2016",
+            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG 2016",
+            "FOOTER_COPYRIGHT_SEAT": "© Seat AG 2016"
         });
 
         $translateProvider.translations('EN', {
@@ -349,10 +347,10 @@
             "FOOTER_IMPRINT": "Imprint",
             "FOOTER_PRIVACY": "Terms of Use",
             "FOOTER_CONDITION": "Privacy Policy",
-            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG",
-            "FOOTER_COPYRIGHT_AUDI": "© Audi AG",
-            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG",
-            "FOOTER_COPYRIGHT_SEAT": "© Seat AG"
+            "FOOTER_COPYRIGHT_VW": "© Volkswagen AG 2016",
+            "FOOTER_COPYRIGHT_AUDI": "© Audi AG 2016",
+            "FOOTER_COPYRIGHT_SKODA": "© Skoda AG 2016",
+            "FOOTER_COPYRIGHT_SEAT": "© Seat AG 2016"
         });
 
         $translateProvider.preferredLanguage('EN');
@@ -375,6 +373,7 @@
 
 
     app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource) {
+
         $rootScope.toggleNavi = function () {
             $('.header-wrapper').toggleClass('active');
         };
