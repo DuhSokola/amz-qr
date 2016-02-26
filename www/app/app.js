@@ -323,7 +323,9 @@
         $translateProvider.preferredLanguage('EN');
     });
 
-    app.run(function ($rootScope) {
+    app.run(function ($rootScope,$state, $stateParams) {
+        $rootScope.$watch();
+
         $rootScope.cssFileName = 'main';
 
         $rootScope.carsApi = 'https://www.leadcollector.amag.ch/readAllModelVariants';
