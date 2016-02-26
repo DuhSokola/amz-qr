@@ -12,7 +12,7 @@
 
         var persist = function (data, success, error) {
 
-            // OPTION_219!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            // option_219!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
             var dataStuff =
                 'salutation='+(data.salutation.toLowerCase()==='mr'?'m':'f')+
@@ -31,7 +31,7 @@
                 '&campaigncode='+$rootScope.global.campaign +
                 '&testdrive='+data.testdrive +
                 '&orderbrochures='+data.catalog +
-                '&vlcoptions='+'option_19'+
+                '&vlcoptions='+data.vlcoptions+
                 '&company='+
                 '&country='+
                 '&dealer='+

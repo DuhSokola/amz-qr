@@ -14,17 +14,17 @@
 
     <div class="legal">
         <div layout="row" layout-align="center">
-            <md-button class="md-primary" href="#/impressum" aria-label="models">
-                <span translate="FOOTER_IMPRESSUM"></span>
+            <md-button class="md-primary" href="" aria-label="models" ng-click="openPopupImprint()">
+                <span translate="FOOTER_IMPRINT"></span>
             </md-button>
         </div>
         <div layout="row" layout-align="center">
-            <md-button class="md-primary" href="#/terms" aria-label="models">
+            <md-button class="md-primary" href="" aria-label="models" ng-click="openPopupPrivacy()">
                 <span translate="FOOTER_PRIVACY"></span>
             </md-button>
         </div>
         <div layout="row" layout-align="center">
-            <md-button class="md-primary" href="#/policy" aria-label="models">
+            <md-button class="md-primary" href="" aria-label="models" ng-click="openPopupConditions()">
                 <span translate="FOOTER_CONDITION"></span>
             </md-button>
         </div>
@@ -37,3 +37,27 @@
         <span ng-if="selectedCSSFile == 'seat'" translate="FOOTER_COPYRIGHT_SEAT"></span>
     </div>
 </footer>
+
+<div id="popup_imprint" ng-class="info-popup" class="info-popup">
+    <a href="" ng-click="closePopup()" class="close"></a>
+    <h2 translate="FOOTER_IMPRINT"></h2>
+    <div class="inner-scroll">
+        <p translate="FOOTER_IMPRINT_POPUP"></p>
+    </div>
+</div>
+
+<div id="popup_privacy" ng-class="info-popup" class="info-popup">
+    <a href="" ng-click="closePopup()" class="close"></a>
+    <h2 translate="FOOTER_PRIVACY"></h2>
+    <div class="inner-scroll">
+        <p translate="FOOTER_PRIVACY_POPUP"></p>
+    </div>
+</div>
+
+<div id="popup_conditions" ng-class="info-popup" class="info-popup">
+    <a href="" ng-click="closePopup()" class="close"></a>
+    <h2 translate="FOOTER_CONDITION"></h2>
+    <div class="inner-scroll">
+        <p translate="FOOTER_CONDITION_POPUP"></p>
+    </div>
+</div>

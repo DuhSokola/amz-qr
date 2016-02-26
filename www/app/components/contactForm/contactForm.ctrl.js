@@ -49,7 +49,8 @@
             leasingTyp: '',
             privacyAccepted: '',
             newsletter: true,
-            brand: $rootScope.global.params.selectedBrand
+            brand: $rootScope.global.params.selectedBrand,
+            vlcoptions:''
         };
         
         var setErrorChkbox = function (id) {
@@ -149,11 +150,20 @@
             return isValid;
         };
 
+        var options = $rootScope.global.params.selectedModelVariantObj.zchCodeTblId.split(',');
+        for(var item in options){
+            $scope.data.vlcoptions += 'option_'+item+',';
+        }
+        $scope.data.vlcoptions = $scope.data.vlcoptions.substring(0,$scope.data.vlcoptions.length-1);
+        console.log($scope.data.vlcoptions);
+
+
         $scope.submit = function () {
             if ($scope.validate()) {
                 console.log('valid');
                 console.log($scope.data);
                 $scope.data.option = $rootScope.global.params.selectedModelVariantObj.versionList[0].id;
+
                 LeadResource.persist($scope.data);
                 return true;
             } else {
