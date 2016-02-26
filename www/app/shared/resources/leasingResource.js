@@ -27,7 +27,9 @@
 
     app.factory('LeasingPromotionDataResource',['$rootScope','$http','$translate', function($rootScope, $http, $translate){
         var getLeasingPromotions = function(model,success,error){
-            return $http.get($rootScope.leasingPromotionApi+'?carCode='+model.versionList[0].id+'&lang='+$translate.use().toLowerCase()).then(success,error);
+            if(model){
+                return $http.get($rootScope.leasingPromotionApi+'?carCode='+model.versionList[0].id+'&lang='+$translate.use().toLowerCase()).then(success,error);
+            }
         };
         return {
             getLeasingPromotions: getLeasingPromotions
