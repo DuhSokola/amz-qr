@@ -11,7 +11,6 @@
             $scope.selectedLanguage = $cookies.get('language');
             $translate.use($scope.selectedLanguage);
         }else{
-            $cookies.put('language',$scope.languages[0]);
             var langExists = false;
             for(var item in $rootScope.global.languages){
                 if(navigator.language.toUpperCase() == $rootScope.global.languages[item]){
@@ -19,6 +18,7 @@
                     break;
                 }
             }
+            $cookies.put('language',$scope.languages[0]);
             $scope.selectedLanguage = langExists ? navigator.language.toUpperCase() : $scope.languages[0];
             $translate.use($scope.selectedLanguage);
         }

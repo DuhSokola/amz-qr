@@ -3,7 +3,7 @@
 <div layout="column" ng-controller="VariantListCtrl">
     <div>
         <md-list-item ng-if="!global.params.selectedMode" class="md-3-line" ng-repeat="variant in global.params.variantList" href="#/{{previousState}}/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{variant.id}}">
-            <img src="/assets/style/img/passat.jpg" alt="" />
+            <img ng-src="{{carsApi + variant.picturePaths[0]}}" alt="" />
             <div class="md-list-item-text">
                 <span>{{variant.name}}</span>
             </div>
@@ -11,7 +11,7 @@
         </md-list-item>
 
         <md-list-item ng-if="global.params.selectedMode" class="md-3-line" ng-repeat="variant in global.params.variantList" href="#/{{previousState}}/{{global.params.selectedBrand}}/{{global.params.selectedModel}}/{{variant.id}}/{{global.params.selectedMode}}">
-            <img src="/assets/style/img/passat.jpg" alt="" />
+            <img ng-src="{{carsApi + variant.picturePaths[0]}}" alt="" />
             <div class="md-list-item-text">
                 <span>{{variant.name}}</span>
             </div>
