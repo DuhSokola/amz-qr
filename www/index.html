@@ -75,24 +75,5 @@
 <script src="/app/components/variantList/variantList.js"></script>
 <!-- endinject -->
 
-<!-- Menu Navigation Toggle-->
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.burger').click(function(e) {
-        e.preventDefault();
-      $('.header-wrapper').toggleClass('active');
-    });
-
-    $('.info-popup-button').click(function(e) {
-        e.preventDefault();
-      $(this).next('.info-popup').toggleClass('active');
-    });
-
-    $('.info-popup .close').click(function(e) {
-        e.preventDefault();
-      $(this).parent().toggleClass('active');
-    });
-  });
-</script>
 </body>
 </html>
