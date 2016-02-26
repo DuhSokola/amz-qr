@@ -326,14 +326,14 @@
     app.run(function ($rootScope) {
         $rootScope.cssFileName = 'main';
 
-        $rootScope.carsApi = 'http://leadcollector.amag.ch/readAllModelVariants';
+        $rootScope.carsApi = 'https://www.leadcollector.amag.ch/readAllModelVariants';
 
-        $rootScope.leasingApi = 'http://leadcollector.amag.ch/leasingCalcStatisticModule/leasingCalcWithStatistic';
-        $rootScope.leasingPromotionApi = 'http://leadcollector.amag.ch/leasingCalcStatisticModule/leasingPromotions';
+        $rootScope.leasingApi = 'https://www.leadcollector.amag.ch/leasingCalcStatisticModule/leasingCalcWithStatistic';
+        $rootScope.leasingPromotionApi = 'https://www.leadcollector.amag.ch/leasingCalcStatisticModule/leasingPromotions';
 
         $rootScope.global = {};
         $rootScope.global.languages = ['EN', 'DE', 'FR', 'IT'];
-        $rootScope.global.campaign = 'autosalon_2016_qr';
+        $rootScope.global.campaign = 'autosalon_genf_2016_qr';
         $rootScope.global.data = {};
         $rootScope.global.params = {};
     });
