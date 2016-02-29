@@ -104,7 +104,10 @@
             "5116 Schinznach-Bad, deren Vertragspartner und/oder an einen autorisierten Dienstleister übermittelt werden. Schliesslich bin ich damit einverstanden, dass mir die AMAG Automobil- und Motoren AG "+
             "fernmeldetechnisch (z.B. per E-Mail) Informationen und Werbung zu Produkten, Dienstleistungen und Veranstaltungen ihrer Marken sendet. Die Daten werden ausschliesslich in Übereinstimmung mit den "+
             "schweizerischen Bestimmungen zum Datenschutz verwendet. Insbesondere erfolgt keine Weitergabe von Daten an unbefugte Dritte. "+
-            "Bei Personen ausserhalb der Schweiz oder Fürstentum Lichtenstein werden die Daten an den Importeur der jeweiligen Marken des entsprechenden Landes für die gleichen Zwecke wie oben erwähnt weitergegeben."
+            "Bei Personen ausserhalb der Schweiz oder Fürstentum Lichtenstein werden die Daten an den Importeur der jeweiligen Marken des entsprechenden Landes für die gleichen Zwecke wie oben erwähnt weitergegeben.",
+
+            "POPUP_SUBMIT": "Bestätigung",
+            "POPUP_SUBMIT_TEXT": "Die Anfrage wurde erfolgreich gesendet"
         });
 
         $translateProvider.translations('FR', {
@@ -195,7 +198,10 @@
             "5116 Schinznach-Bad, à leurs partenaires contractuels et/ou à d’autres prestataires de services agréés. Enfin, je consens à ce qu’AMAG Automobil- und Motoren AG m’envoie par voie de "+
             "télécommunication (par exemple par e-mail) des informations et de la publicité concernant les produits, les services et les événements de ses marques. Les données seront utilisées exclusivement "+
             "en conformité avec les dispositions suisses relatives à la protection des données. Les données ne seront en aucun cas transmises à des tiers non autorisés. "+
-            "Les données des personnes ne résidant pas en Suisse ou dans la Principauté du Liechtenstein seront communiquées à l’importateur du pays concerné aux fins susmentionnées."
+            "Les données des personnes ne résidant pas en Suisse ou dans la Principauté du Liechtenstein seront communiquées à l’importateur du pays concerné aux fins susmentionnées.",
+
+            "POPUP_SUBMIT": "[FR]Bestätigung",
+            "POPUP_SUBMIT_TEXT": "[FR]Die Anfrage wurde erfolgreich gesendet"
         });
 
         $translateProvider.translations('IT', {
@@ -286,7 +292,10 @@
             "5116 Schinznach-Bad, ai suoi partner contrattuali e/o a un prestatore di servizi autorizzato. Infine accetto che AMAG Automobil- und Motoren AG mi invii tramite una tecnica di "+
             "telecomunicazione (ad esempio per e-mail) informazioni e pubblicità su prodotti, servizi ed eventi dei suoi marchi. I dati sono utilizzati esclusivamente in conformità con le "+
             "disposizioni svizzere in materia di protezione dei dati. In particolare, i dati non saranno inoltrati a terzi non autorizzati. "+
-            "I dati personali di coloro che non risiedono né in Svizzera né nel Principato del Liechtenstein saranno trasmessi all’importatore del relativo paese allo stesso scopo sopra menzionato."
+            "I dati personali di coloro che non risiedono né in Svizzera né nel Principato del Liechtenstein saranno trasmessi all’importatore del relativo paese allo stesso scopo sopra menzionato.",
+
+            "POPUP_SUBMIT": "[IT]Bestätigung",
+            "POPUP_SUBMIT_TEXT": "[IT]Die Anfrage wurde erfolgreich gesendet"
         });
 
         $translateProvider.translations('EN', {
@@ -378,7 +387,10 @@
             "authorised service providers. Finally, I give permission for AMAG Automobil- und Motoren AG to contact me (e.g. via e-mail) with information and "+
             "advertising about products, services and events pertaining to its brands. This data will be used solely in accordance with Swiss data protection legislation. "+
             "In particular, this data will at no time be transferred to unauthorised third parties. In the case of persons resident outside Switzerland or the Principality "+
-            "of Liechtenstein, personal data will be transferred to the importer based in the relevant country, and said data will be used for the same purposes as outlined above."
+            "of Liechtenstein, personal data will be transferred to the importer based in the relevant country, and said data will be used for the same purposes as outlined above.",
+
+            "POPUP_SUBMIT": "[EN]Bestätigung",
+            "POPUP_SUBMIT_TEXT": "[EN]Die Anfrage wurde erfolgreich versendet."
         });
 
         $translateProvider.preferredLanguage('EN');

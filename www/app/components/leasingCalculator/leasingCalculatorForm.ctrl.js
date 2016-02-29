@@ -25,11 +25,24 @@
         $scope.data.milage = 10000;
         $scope.data.interestRateDefault = '5.40';
         $scope.data.interestRateEffektive = parseFloat($scope.data.interestRateDefault) + 0.05;
-        $scope.data.discount = false;
-        $scope.data.discountRate = '3.90';
+        $scope.data.discountList = [];
         $scope.result = '-';
 
+        $scope.$watch('data.discountList',function(values, newval, oldval){
+            console.log(values);
+            console.log(newval);
+            console.log(oldval);
+        },true);
+
         $scope.calculate = function () {
+            for(var i=0;i<$scope.data.discountList.length;i++){
+                $scope.data.discount = $scope.data.discountList[i] ? true:false;
+                if($scope.data.discount){
+                    $scope.data.discountRate = $rootScope.global.params.leasingPromotions[i].interestRate;
+                    break;
+                }
+            }
+
             LeasingDataResource.getLeasingCalculation({
                 carCode: $rootScope.global.params.selectedModelVariantObj.versionList[0].id,
                 interestRate: $scope.data.discount ? $scope.data.discountRate : $scope.data.interestRateDefault,
@@ -44,7 +57,7 @@
                 console.log('err');
                 $scope.result = 7777;
             });
-        }
+        };;
 
     }]);
 

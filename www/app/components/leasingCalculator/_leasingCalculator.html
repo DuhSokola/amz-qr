@@ -27,7 +27,7 @@
 
         <fieldset class="standard contact-fieldset layout-row">
             <legend translate="LEASINGCALC_OFFER"></legend>
-            <md-checkbox id="checkbox-discount" ng-model="data.discount" aria-label="checkbox" ng-repeat="row in global.params.leasingPromotions"
+            <md-checkbox id="checkbox-discount" ng-model="data.discountList[$index]" aria-label="checkbox" ng-repeat="row in global.params.leasingPromotions"
                          class="md-primary checkbox-inline" >
                 <span translate="LEASINGCALC_OFFER_TEXT" translate-values="{discountRate: {{row.interestRate}}, validTo: '{{row.validTo}}', runningTimeFrom: {{row.runningTimeFrom}}, runningTimeTo: {{row.runningTimeTo}}, kmPerYear: {{row.maxKilometerPerYear}} }"></span>
             </md-checkbox>

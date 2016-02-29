@@ -165,7 +165,11 @@
                 console.log($scope.data);
                 $scope.data.option = $rootScope.global.params.selectedModelVariantObj.versionList[0].id;
 
-                LeadResource.persist($scope.data);
+                LeadResource.persist($scope.data,function(res){
+                    $('#popup_submit').addClass('active');
+                },function(error){
+                    $('#popup_submit').addClass('active');
+                });
                 $scope.data.vlcoptions = [];
                 return true;
             } else {
