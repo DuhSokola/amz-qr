@@ -408,7 +408,7 @@
                 CarResource.getByBrand($rootScope.global.params.selectedBrand, function (response) {
                         $rootScope.global.params.allModels = response.models;
                         CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
-                        console.log($rootScope.global.params);
+                        console.log($rootScope.global.params.selectedModelVariantObj);
                         LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
                             for (var i = 0; i < res.data.length; i++) {
                                 if (res.data[i].id.substring(0, 5) == '0001_') {

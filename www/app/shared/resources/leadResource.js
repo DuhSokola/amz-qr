@@ -31,7 +31,6 @@
                 '&campaigncode='+$rootScope.global.campaign +
                 '&testdrive='+data.testdrive +
                 '&orderbrochures='+data.catalog +
-                '&vlcoptions='+data.vlcoptions+
                 '&company='+
                 '&country='+
                 '&dealer='+
@@ -46,6 +45,10 @@
                 '&age='+
                 '&currentBrand='+
                 '&currentModel=';
+
+            for(var i = 0; i<data.vlcoptions.length;i++){
+                dataStuff += '&vlcoptions='+data.vlcoptions[i];
+            }
 
             console.log(dataStuff);
 

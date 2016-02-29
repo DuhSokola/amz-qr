@@ -50,7 +50,7 @@
             privacyAccepted: '',
             newsletter: true,
             brand: $rootScope.global.params.selectedBrand,
-            vlcoptions:''
+            vlcoptions:[]
         };
         
         var setErrorChkbox = function (id) {
@@ -150,15 +150,18 @@
             return isValid;
         };
 
-        var options = $rootScope.global.params.selectedModelVariantObj.zchCodeTblId.split(',');
-        for(var item in options){
-            $scope.data.vlcoptions += 'option_'+item+',';
-        }
-        $scope.data.vlcoptions = $scope.data.vlcoptions.substring(0,$scope.data.vlcoptions.length-1);
-        console.log($scope.data.vlcoptions);
+
 
 
         $scope.submit = function () {
+            var options = $rootScope.global.params.selectedModelVariantObj.zchCodeTblId.split(',');
+            console.log(options);
+
+            for(var i=0;i<options.length; i++){
+                $scope.data.vlcoptions.push('option_'+options[i]);
+            }
+            console.log($scope.data.vlcoptions);
+
             if ($scope.validate()) {
                 console.log('valid');
                 console.log($scope.data);
