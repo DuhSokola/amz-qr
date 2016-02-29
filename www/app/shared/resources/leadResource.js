@@ -31,6 +31,7 @@
                 '&campaigncode='+$rootScope.global.campaign +
                 '&testdrive='+data.testdrive +
                 '&orderbrochures='+data.catalog +
+                '&newsletter='+data.newsletter +
                 '&company='+
                 '&country='+
                 '&dealer='+
@@ -39,12 +40,13 @@
                 '&salesperson='+
                 '&dynamicSearchResult=false'+
                 '&collector=QRLandingpage'+
-                '&versionNumber=0.0.1'+
+                '&versionNumber=0.1.0'+
                 '&contact=false'+
                 '&leadactiontyp='+
                 '&age='+
                 '&currentBrand='+
                 '&currentModel=';
+
 
             for(var i = 0; i<data.vlcoptions.length;i++){
                 dataStuff += '&vlcoptions='+data.vlcoptions[i];
