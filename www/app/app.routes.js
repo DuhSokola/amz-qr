@@ -18,6 +18,7 @@
 
     app.config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/landingPage/vw/golf/golf_gti');
+        //$urlRouterProvider.otherwise('/error');
 
         $stateProvider
             .state('modelList', {

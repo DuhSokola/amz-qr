@@ -397,27 +397,31 @@
         $rootScope.global.campaign = 'autosalon_genf_2016_qr';
         $rootScope.global.data = {};
         $rootScope.global.params = {};
+
     });
 
 
     app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', '$state', function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource, $state) {
 
-        console.log(window.location.href);
-
         if(window.location.href){
             if(window.location.href == 'https://qr.volkswagen.ch/'){
-                console.log("REROUTE");
-                $state.go('modelList',{
-                    brand:'vw'
-                });
+                console.log("ROUTE TO VW");
+                window.location.href = 'https://qr.volkswagen.ch/#/modelList/vw'
+            }
+            if(window.location.href == 'https://qr.skoda.ch/'){
+                console.log("ROUTE TO SKODA");
+                window.location.href = 'https://qr.skoda.ch/#/modelList/skoda'
+            }
+            if(window.location.href == 'https://qr.audi.ch/'){
+                console.log("ROUTE TO AUDI");
+                window.location.href = 'https://qr.audi.ch/#/modelList/audi'
             }
             if(window.location.href == 'https://qr.seat.ch/'){
-                $state.go('modelList',{
-                    brand:'seat'
-                });
+                console.log("ROUTE TO SEAT");
+                window.location.href = 'https://qr.seat.ch/#/modelList/seat'
             }
         }
-        
+
         $rootScope.toggleNavi = function () {
             $('.header-wrapper').toggleClass('active');
         };
@@ -508,6 +512,11 @@
         $rootScope.$on('$stateChangeSuccess', function (ev, to, toParams, from, fromParams) {
             $rootScope.previousState = from.name;
             $rootScope.currentState = to.name;
+            console.log(from);
+            console.log(to);
+
+            console.log(window.location.href);
+
         });
 
         $rootScope.$on('$stateChangeStart', function (ev, to, toParams, from, fromParams) {
