@@ -8,7 +8,7 @@
                 <div layout-gt-sm="row">
                     <md-input-container class="select">
                         <label translate="CONTACT_SALUTATION"></label>
-                        <md-select id="selectSalutation" name="salutation" ng-model="data.salutation"  required>
+                        <md-select id="selectSalutation" name="salutation" ng-model="data.salutation" required>
                             <md-option id="selectSalutationOption" ng-click="salutationSelect()" ng-repeat="salutation in salutations" value="{{salutation.value}}">
                                 {{salutation.translation | translate}}
                             </md-option>
@@ -22,7 +22,7 @@
                 <div layout-gt-sm="row" class="form-name-wrapper">
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_FIRSTNAME"></label>
-                        <input type="text" name="firstName" ng-model="data.firstName" required>
+                        <input type="text" name="firstName" ng-model="data.firstName" maxlength="50" required>
                         <div ng-messages="data.firstName" role="alert">
                             <div ng-message="required" ng-hide="data.firstName">
                                 <span translate="CONTACT_ERROR_FIRSTNAME"></span>
@@ -32,7 +32,7 @@
 
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_LASTNAME"></label>
-                        <input type="text" ng-model="data.lastName" required>
+                        <input type="text" ng-model="data.lastName" maxlength="50" required>
                         <div ng-messages="data.lastName" role="alert">
                             <div ng-message="required" ng-hide="data.lastName">
                                 <span translate="CONTACT_ERROR_LASTNAME"></span>
@@ -43,7 +43,7 @@
                 <div layout-gt-sm="row" class="form-street-wrapper">
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_STREET"></label>
-                        <input type="text" ng-model="data.street" required>
+                        <input type="text" ng-model="data.street" maxlength="500" required>
                         <div ng-messages="data.street" role="alert">
                             <div ng-message="required" ng-hide="data.street">
                                 <span translate="CONTACT_ERROR_STREET"></span>
@@ -63,7 +63,7 @@
                 <div layout-gt-sm="row" class="form-place-wrapper">
                     <md-input-container class="md-block" flex-xs-sm>
                         <label translate="CONTACT_ZIP"></label>
-                        <input type="number" ng-model="data.zip" required>
+                        <input type="number" ng-model="data.zip" maxlength="15" required>
                         <div ng-messages="data.zip" role="alert">
                             <div ng-message="required" ng-hide="data.zip">
                                 <span translate="CONTACT_ERROR_ZIP"></span>
@@ -72,7 +72,7 @@
                     </md-input-container>
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_CITY"></label>
-                        <input type="text" ng-model="data.city" required>
+                        <input type="text" ng-model="data.city" maxlength="50" required>
                         <div ng-messages="data.city" role="alert">
                             <div ng-message="required" ng-hide="data.city">
                                 <span translate="CONTACT_ERROR_CITY"></span>
@@ -83,7 +83,7 @@
                 <div layout-gt-sm="row" class="form-phone-wrapper">
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_TELEPHONE"></label>
-                        <input type="text" ng-model="data.telephone" required>
+                        <input type="text" ng-model="data.telephone" maxlength="50" required>
                         <div ng-messages="data.telephone" role="alert">
                             <div ng-message="required" ng-hide="data.telephone">
                                 <span translate="CONTACT_ERROR_TELEPHONE"></span>
@@ -94,7 +94,7 @@
                 <div layout-gt-sm="row" class="form-mail-wrapper">
                     <md-input-container class="md-block" flex-gt-sm>
                         <label translate="CONTACT_EMAIL"></label>
-                        <input type="text" ng-model="data.email" pattern="{{emailPattern}}" required>
+                        <input type="text" ng-model="data.email" pattern="{{emailPattern}}" maxlength="255" required>
                         <div ng-messages="data.email" role="alert">
                             <div ng-message="required" ng-hide="data.email">
                                 <span translate="CONTACT_ERROR_EMAIL"></span>
