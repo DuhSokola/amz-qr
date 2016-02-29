@@ -372,30 +372,39 @@
     });
 
 
-    app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource) {
+    app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', '$state', function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource, $state) {
 
+        console.log(window.location.href);
+
+        if(window.location.href){
+            if(window.location.href == 'https://qr.volkswagen.ch/'){
+                console.log("REROUTE");
+                $state.go('modelList',{
+                    brand:'vw'
+                });
+            }
+            if(window.location.href == 'https://qr.seat.ch/'){
+                $state.go('modelList',{
+                    brand:'seat'
+                });
+            }
+        }
+        
         $rootScope.toggleNavi = function () {
             $('.header-wrapper').toggleClass('active');
         };
-
         $rootScope.openPopup = function () {
             $('.info-popup').addClass('active');
         };
-
-
         $rootScope.openPopupImprint = function () {
             $('#popup_imprint').addClass('active');
         };
-
         $rootScope.openPopupPrivacy = function () {
             $('#popup_privacy').addClass('active');
         };
-
         $rootScope.openPopupConditions = function () {
             $('#popup_conditions').addClass('active');
         };
-
-
         $rootScope.closePopup = function () {
             $('.info-popup').removeClass('active');
         };
@@ -408,7 +417,6 @@
                 CarResource.getByBrand($rootScope.global.params.selectedBrand, function (response) {
                         $rootScope.global.params.allModels = response.models;
                         CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
-                        console.log($rootScope.global.params.selectedModelVariantObj);
                         LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
                             for (var i = 0; i < res.data.length; i++) {
                                 if (res.data[i].id.substring(0, 5) == '0001_') {

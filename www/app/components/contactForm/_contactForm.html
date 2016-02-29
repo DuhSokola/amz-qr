@@ -52,7 +52,7 @@
                     </md-input-container>
                     <md-input-container class="md-block" flex-xs-sm>
                         <label translate="CONTACT_STREET_NR"></label>
-                        <input type="text" ng-model="data.streetNr" required>
+                        <input type="text" ng-model="data.streetNr" maxlength="10" required>
                         <div ng-messages="data.streetNr" role="alert">
                             <div ng-message="required" ng-hide="data.streetNr">
                                 <span translate="CONTACT_ERROR_STREET_NR"></span>

@@ -151,8 +151,6 @@
         };
 
 
-
-
         $scope.submit = function () {
             var options = $rootScope.global.params.selectedModelVariantObj.zchCodeTblId.split(',');
             console.log(options);
@@ -168,9 +166,11 @@
                 $scope.data.option = $rootScope.global.params.selectedModelVariantObj.versionList[0].id;
 
                 LeadResource.persist($scope.data);
+                $scope.data.vlcoptions = [];
                 return true;
             } else {
                 console.log('invalid');
+                $scope.data.vlcoptions = [];
                 return false;
             }
         };
