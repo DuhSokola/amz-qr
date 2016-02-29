@@ -65,6 +65,8 @@ input[type="checkbox"] {
   height: 20px;
 }
 md-checkbox {
+  display: block;
+  @include clearfix;
   &:focus, &:focus .md-label{
     outline: none;
   }
@@ -99,6 +101,9 @@ md-checkbox[aria-checked="true"] .md-label {
     background: transparent;
     transform: rotate(-45deg);
   }
+}
+fieldset md-checkbox:not(:last-of-type){
+  padding-bottom: 2.5rem;
 }
 
 // RADIO BUTTON
