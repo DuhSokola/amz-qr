@@ -170,6 +170,9 @@ md-select-menu {
 }
 
 .info-popup {
+  h2 {
+    font-size: rem(14px);
+  }
   .close {
     background-image: url(../img/audi/close.svg);
   }

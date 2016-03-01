@@ -149,6 +149,9 @@ md-select-menu {
 }
 
 .info-popup {
+  h2 {
+    font-size: rem(16px);
+  }
   .close {
     background-image: url(../img/skoda/close.svg);
   }

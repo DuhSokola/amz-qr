@@ -175,6 +175,9 @@ md-select-menu {
 }
 
 .info-popup {
+  h2 {
+    font-size: rem(18px);
+  }
   .close {
     background-image: url(../img/volkswagen/close.svg);
   }
