@@ -100,10 +100,10 @@
                 setErrorRadio('radio-catalog');
                 isValid = false;
             }
-            if (!$scope.data.testdrive) {
+            /*if (!$scope.data.testdrive) {
                 setErrorRadio('radio-testdrive');
                 isValid = false;
-            }
+            }*/
             if ($scope.data.leasing && !$scope.data.leasingTyp) {
                 setErrorRadio('radio-leasing');
                 isValid = false;
@@ -149,7 +149,6 @@
 
             return isValid;
         };
-
 
         $scope.submit = function () {
             var options = $rootScope.global.params.selectedModelVariantObj.zchCodeTblId.split(',');

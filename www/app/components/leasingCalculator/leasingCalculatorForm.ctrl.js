@@ -32,7 +32,6 @@
 
         $("fieldset.standard.contact-fieldset.layout-row").css("padding-top","5px");
 
-
         $scope.calculate = function () {
             console.log($scope.data.discountRate);
             if($scope.data.discountRate != undefined && $scope.data.discountRate != 'undefined'){
