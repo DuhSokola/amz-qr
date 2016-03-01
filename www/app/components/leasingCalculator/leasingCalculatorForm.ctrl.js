@@ -14,6 +14,8 @@
         $rootScope.global.params.selectedModelVariant = $stateParams.modelVariant;
         $rootScope.global.params.selectedMode = null;
 
+
+
         $scope.data = {};
         $rootScope.$watch('global.params.selectedModelVariantObj', function () {
             if ($rootScope.global.params.selectedModelVariantObj) {
@@ -28,30 +30,15 @@
         $scope.data.discountRate = undefined;
         $scope.result = '-';
 
-        /*$scope.selectDiscount = function($event){
-            for(var i=0;i<$scope.data.discountList.length;i++){
-                console.log($event.currentTarget.attributes.index.value);
-                if(!(i == $event.currentTarget.attributes.index.value)){
-                    $scope.data.discountList[i] = false;
-                }
-                if(i == $event.currentTarget.attributes.index.value){
-                    if($scope.data.discountList[i]==true){
-                        $scope.data.discountList[i] = false;
-                    }
-                }
-            }
-        };*/
+        $("fieldset.standard.contact-fieldset.layout-row").css("padding-top","5px");
+
 
         $scope.calculate = function () {
-            /*for (var i = 0; i < $scope.data.discountList.length; i++) {
-                $scope.data.discount = $scope.data.discountList[i] ? true : false;
-                if ($scope.data.discount) {
-                    $scope.data.discountRate = $rootScope.global.params.leasingPromotions[i].interestRate;
-                    break;
-                }
-            }*/
-            if($scope.data.discountRate){
+            console.log($scope.data.discountRate);
+            if($scope.data.discountRate != undefined && $scope.data.discountRate != 'undefined'){
                 $scope.data.discountRateD = jQuery.parseJSON($scope.data.discountRate);
+            }else{
+                $scope.data.discountRateD = undefined;
             }
 
             LeasingDataResource.getLeasingCalculation({

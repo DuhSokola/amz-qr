@@ -13,7 +13,7 @@
 
     var app = angular.module('app', deps);
 
-    app.config(function ($translateProvider) {
+    app.config(function ($translateProvider, $httpProvider) {
 
         $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
 
@@ -201,7 +201,10 @@
             "Les données des personnes ne résidant pas en Suisse ou dans la Principauté du Liechtenstein seront communiquées à l’importateur du pays concerné aux fins susmentionnées.",
 
             "POPUP_SUBMIT": "Confirmation",
-            "POPUP_SUBMIT_TEXT": "Nous avons reçu votre demande"
+            "POPUP_SUBMIT_TEXT": "Nous avons reçu votre demande",
+
+            "LEASING_NO_SELECT": "non"
+
         });
 
         $translateProvider.translations('IT', {
@@ -295,7 +298,9 @@
             "I dati personali di coloro che non risiedono né in Svizzera né nel Principato del Liechtenstein saranno trasmessi all’importatore del relativo paese allo stesso scopo sopra menzionato.",
 
             "POPUP_SUBMIT": "Conferma",
-            "POPUP_SUBMIT_TEXT": "La sua richiesta è stata ricevuta con successo"
+            "POPUP_SUBMIT_TEXT": "La sua richiesta è stata ricevuta con successo",
+
+            "LEASING_NO_SELECT": "no"
         });
 
         $translateProvider.translations('EN', {
@@ -390,10 +395,18 @@
             "of Liechtenstein, personal data will be transferred to the importer based in the relevant country, and said data will be used for the same purposes as outlined above.",
 
             "POPUP_SUBMIT": "Confirmation",
-            "POPUP_SUBMIT_TEXT": "The request has been successfully sent."
+            "POPUP_SUBMIT_TEXT": "The request has been successfully sent.",
+
+            "LEASING_NO_SELECT": "no"
         });
 
         $translateProvider.preferredLanguage('EN');
+
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+        $httpProvider.defaults.headers.common['Accept'] = 'application/json, text/javascript';
+        $httpProvider.defaults.headers.common['Content-Type'] = 'application/json; charset=utf-8';
+        $httpProvider.defaults.useXDomain = true;
+
     });
 
     app.run(function ($rootScope) {
@@ -413,7 +426,8 @@
     });
 
 
-    app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', '$state', function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource, $state) {
+    app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', '$state', '$sanitize',
+        function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource, $state, $sanitize) {
 
         if (window.location.href) {
             if (window.location.href == 'https://qr.volkswagen.ch/') {
@@ -466,13 +480,15 @@
                         $rootScope.global.params.allModels = response.models;
                         CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
                         LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
-                            for (var i = 0; i < res.data.length; i++) {
+                           /* for (var i = 0; i < res.data.length; i++) {
                                 if (res.data[i].id.substring(0, 5) == '0001_') {
                                     res.data.splice(i, 1);
                                     i--;
                                 }
-                            }
-                            $rootScope.global.params.leasingPromotions = res.data;
+                            }*/
+                            $rootScope.global.params.leasingPromotions = res.data ;
+
+                            console.log($rootScope.global.params.leasingPromotions);
                             $scope.progressbar.complete();
                             blockUI.stop();
                         }, function (data) {
