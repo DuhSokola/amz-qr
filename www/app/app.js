@@ -461,6 +461,35 @@
                     console.log("ROUTE TO VWNF");
                     window.location.href = 'https://qr.vw-nutzfahrzeuge.ch/#/modelList/vwnf'
                 }
+
+                /*Workaround REDIRECTS*/
+                if (window.location.href == 'http://qr.volkswagen.ch/1wkO') {
+                    window.location.href = 'http://q-r.to/1wkO'
+                }
+                if (window.location.href == 'http://qr.volkswagen.ch/1x3M') {
+                    window.location.href = 'http://q-r.to/1x3M'
+                }
+                if (window.location.href == 'http://qr.volkswagen.ch/23md') {
+                    window.location.href = 'http://q-r.to/23md'
+                }
+                if (window.location.href == 'http://qr.volkswagen.ch/1x2x') {
+                    window.location.href = 'http://q-r.to/1x2x'
+                }
+                if (window.location.href == 'http://qr.volkswagen.ch/1xrG') {
+                    window.location.href = 'http://q-r.to/1xrG'
+                }
+                if (window.location.href == 'http://qr.volkswagen.ch/2D5i') {
+                    window.location.href = 'http://q-r.to/2D5i'
+                }
+                if (window.location.href == 'http://qr.volkswagen.ch/1x3B') {
+                    window.location.href = 'http://q-r.to/1x3B'
+                }
+                if (window.location.href == 'http://qr.volkswagen.ch/20bA') {
+                    window.location.href = 'http://q-r.to/20bA'
+                }
+                if (window.location.href == 'http://qr.volkswagen.ch/2GTo') {
+                    window.location.href = 'http://q-r.to/2GTo'
+                }
             }
 
             $rootScope.toggleNavi = function () {
