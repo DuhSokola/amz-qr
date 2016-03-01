@@ -36,18 +36,6 @@ footer {
       @include button($bg:$blue-light-grey,$font-size:15,$color:$footer-text,$padding:.8rem,$border-radius:3px,$display:table,$margin:30px auto,$max-width:300px);
       width: calc(100% - 2rem);
     }
-    .md-select-menu-container {
-      position: absolute;
-      width: 100%;
-      top: calc(.8rem + 30px);
-      left: 0;
-      height: 0;
-      overflow: hidden;
-      .language-options {
-        @include button($bg:$white,$font-size:15,$color:$footer-text,$display:block,$padding:.8rem,$border-radius:3px,$margin:0px auto,$max-width:300px);
-      }
-    }
-
     .md-text {
       left: 0;
       width: 100%;

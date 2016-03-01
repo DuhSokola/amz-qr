@@ -20,9 +20,11 @@ footer {
       }
     }
   }
+
   .facebook {
     background: url(../img/audi/facebook.svg) center center;
   }
+
   .google{
     background: url(../img/audi/google.svg) center center;
   }
@@ -37,17 +39,6 @@ footer {
       background-image:url(../img/audi/arrow-dropdown-footer.svg);
       background-size: 14px auto;
       background-position: right 10px center;
-    }
-    .md-select-menu-container {
-      position: absolute;
-      width: 100%;
-      top: calc(.8rem + 30px);
-      left: 0;
-      height: 0;
-      overflow: hidden;
-      .language-options {
-        @include button($bg:$light-grey-30,$font-size:15,$color:$black,$display:block,$padding:.8rem,$margin:0px auto,$max-width:300px);
-      }
     }
   }
 

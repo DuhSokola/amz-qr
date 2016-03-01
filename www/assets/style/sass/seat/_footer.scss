@@ -49,17 +49,6 @@ footer {
     .md-select-value {
       width: calc(100% + 1.5rem);
     }
-    .md-select-menu-container {
-      position: absolute;
-      width: 100%;
-      top: calc(.8rem + 30px);
-      left: 0;
-      height: 0;
-      overflow: hidden;
-      .language-options {
-        @include button($bg:$white,$font-size:15,$color:$footer-text,$padding:.8rem);
-      }
-    }
     .md-text {
       left: 1.5rem;
     }
