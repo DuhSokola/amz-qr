@@ -109,7 +109,10 @@
             "POPUP_SUBMIT": "Bestätigung",
             "POPUP_SUBMIT_TEXT": "Die Anfrage wurde erfolgreich gesendet",
 
-            "LEASING_HEADER_TEXT": "Leasing Rechner"
+            "LEASING_HEADER_TEXT": "Leasing Rechner",
+
+            "LEASING_NO_SELECT": "Keine",
+
         });
 
         $translateProvider.translations('FR', {

@@ -100,10 +100,6 @@
                 setErrorRadio('radio-catalog');
                 isValid = false;
             }
-            /*if (!$scope.data.testdrive) {
-                setErrorRadio('radio-testdrive');
-                isValid = false;
-            }*/
             if ($scope.data.leasing && !$scope.data.leasingTyp) {
                 setErrorRadio('radio-leasing');
                 isValid = false;

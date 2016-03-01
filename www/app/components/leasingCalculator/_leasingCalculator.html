@@ -34,7 +34,7 @@
             <md-radio-group ng-model="data.discountRate">
                 <md-radio-button name="radio-discount" value="undefined" class="md-primary radio-inline" ng-checked="data.discountRate == undefined">
                     <input type="radio"></input>
-                    <span><b>Keine</b></span>
+                    <span><b translate="LEASING_NO_SELECT"></b></span>
                 </md-radio-button>
                 <md-radio-button name="radio-discount" value="{{row}}" class="md-primary radio-inline" ng-repeat="row in global.params.leasingPromotions">
                     <input type="radio"></input>
