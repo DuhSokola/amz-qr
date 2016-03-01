@@ -200,8 +200,8 @@
             "en conformité avec les dispositions suisses relatives à la protection des données. Les données ne seront en aucun cas transmises à des tiers non autorisés. " +
             "Les données des personnes ne résidant pas en Suisse ou dans la Principauté du Liechtenstein seront communiquées à l’importateur du pays concerné aux fins susmentionnées.",
 
-            "POPUP_SUBMIT": "[FR]Bestätigung",
-            "POPUP_SUBMIT_TEXT": "[FR]Die Anfrage wurde erfolgreich gesendet"
+            "POPUP_SUBMIT": "Confirmation",
+            "POPUP_SUBMIT_TEXT": "Nous avons reçu votre demande"
         });
 
         $translateProvider.translations('IT', {
@@ -294,8 +294,8 @@
             "disposizioni svizzere in materia di protezione dei dati. In particolare, i dati non saranno inoltrati a terzi non autorizzati. " +
             "I dati personali di coloro che non risiedono né in Svizzera né nel Principato del Liechtenstein saranno trasmessi all’importatore del relativo paese allo stesso scopo sopra menzionato.",
 
-            "POPUP_SUBMIT": "[IT]Bestätigung",
-            "POPUP_SUBMIT_TEXT": "[IT]Die Anfrage wurde erfolgreich gesendet"
+            "POPUP_SUBMIT": "Conferma",
+            "POPUP_SUBMIT_TEXT": "La sua richiesta è stata ricevuta con successo"
         });
 
         $translateProvider.translations('EN', {
@@ -389,8 +389,8 @@
             "In particular, this data will at no time be transferred to unauthorised third parties. In the case of persons resident outside Switzerland or the Principality " +
             "of Liechtenstein, personal data will be transferred to the importer based in the relevant country, and said data will be used for the same purposes as outlined above.",
 
-            "POPUP_SUBMIT": "[EN]Bestätigung",
-            "POPUP_SUBMIT_TEXT": "[EN]Die Anfrage wurde erfolgreich versendet."
+            "POPUP_SUBMIT": "Confirmation",
+            "POPUP_SUBMIT_TEXT": "The request has been successfully sent."
         });
 
         $translateProvider.preferredLanguage('EN');
@@ -431,6 +431,10 @@
             if (window.location.href == 'https://qr.seat.ch/') {
                 console.log("ROUTE TO SEAT");
                 window.location.href = 'https://qr.seat.ch/#/modelList/seat'
+            }
+            if (window.location.href == 'https://qr.vw-nutzfahrzeuge.ch/') {
+                console.log("ROUTE TO VWNF");
+                window.location.href = 'https://qr.vw-nutzfahrzeuge.ch/#/modelList/vwnf'
             }
         }
 
