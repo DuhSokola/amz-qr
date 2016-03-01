@@ -99,11 +99,11 @@
             "FOOTER_COPYRIGHT_AUDI": "© Audi AG 2016",
             "FOOTER_COPYRIGHT_SKODA": "© Skoda AG 2016",
             "FOOTER_COPYRIGHT_SEAT": "© Seat AG 2016",
-            "FOOTER_CONDITION_POPUP": "Ich bin damit einverstanden, dass meine personenbezogenen Daten zum Zwecke der Interessentenbefragung und Interessenteninformation (z.B. über Produkte, Dienstleistungen und Veranstaltungen "+
-            "der AMAG Automobil- und Motoren AG und ihren Marken) bearbeitet werden. Weiter bin ich damit einverstanden, dass meine Daten der AMAG Automobil- und Motoren AG, Aarauerstrasse 20, "+
-            "5116 Schinznach-Bad, deren Vertragspartner und/oder an einen autorisierten Dienstleister übermittelt werden. Schliesslich bin ich damit einverstanden, dass mir die AMAG Automobil- und Motoren AG "+
-            "fernmeldetechnisch (z.B. per E-Mail) Informationen und Werbung zu Produkten, Dienstleistungen und Veranstaltungen ihrer Marken sendet. Die Daten werden ausschliesslich in Übereinstimmung mit den "+
-            "schweizerischen Bestimmungen zum Datenschutz verwendet. Insbesondere erfolgt keine Weitergabe von Daten an unbefugte Dritte. "+
+            "FOOTER_CONDITION_POPUP": "Ich bin damit einverstanden, dass meine personenbezogenen Daten zum Zwecke der Interessentenbefragung und Interessenteninformation (z.B. über Produkte, Dienstleistungen und Veranstaltungen " +
+            "der AMAG Automobil- und Motoren AG und ihren Marken) bearbeitet werden. Weiter bin ich damit einverstanden, dass meine Daten der AMAG Automobil- und Motoren AG, Aarauerstrasse 20, " +
+            "5116 Schinznach-Bad, deren Vertragspartner und/oder an einen autorisierten Dienstleister übermittelt werden. Schliesslich bin ich damit einverstanden, dass mir die AMAG Automobil- und Motoren AG " +
+            "fernmeldetechnisch (z.B. per E-Mail) Informationen und Werbung zu Produkten, Dienstleistungen und Veranstaltungen ihrer Marken sendet. Die Daten werden ausschliesslich in Übereinstimmung mit den " +
+            "schweizerischen Bestimmungen zum Datenschutz verwendet. Insbesondere erfolgt keine Weitergabe von Daten an unbefugte Dritte. " +
             "Bei Personen ausserhalb der Schweiz oder Fürstentum Lichtenstein werden die Daten an den Importeur der jeweiligen Marken des entsprechenden Landes für die gleichen Zwecke wie oben erwähnt weitergegeben.",
 
             "POPUP_SUBMIT": "Bestätigung",
@@ -193,11 +193,11 @@
             "FOOTER_COPYRIGHT_SKODA": "© Skoda AG 2016",
             "FOOTER_COPYRIGHT_SEAT": "© Seat AG 2016",
 
-            "FOOTER_CONDITION_POPUP": "Je consens à ce que mes données personnelles soient utilisées à des fins de sondage et d’information de personnes intéressées (par exemple au sujet de produits, "+
-            "de services ou d’événements d’AMAG Automobil- und Motoren AG et de ses marques). J’accepte également que mes données soient transmises à AMAG Automobil- und Motoren AG, Aarauerstrasse 20, "+
-            "5116 Schinznach-Bad, à leurs partenaires contractuels et/ou à d’autres prestataires de services agréés. Enfin, je consens à ce qu’AMAG Automobil- und Motoren AG m’envoie par voie de "+
-            "télécommunication (par exemple par e-mail) des informations et de la publicité concernant les produits, les services et les événements de ses marques. Les données seront utilisées exclusivement "+
-            "en conformité avec les dispositions suisses relatives à la protection des données. Les données ne seront en aucun cas transmises à des tiers non autorisés. "+
+            "FOOTER_CONDITION_POPUP": "Je consens à ce que mes données personnelles soient utilisées à des fins de sondage et d’information de personnes intéressées (par exemple au sujet de produits, " +
+            "de services ou d’événements d’AMAG Automobil- und Motoren AG et de ses marques). J’accepte également que mes données soient transmises à AMAG Automobil- und Motoren AG, Aarauerstrasse 20, " +
+            "5116 Schinznach-Bad, à leurs partenaires contractuels et/ou à d’autres prestataires de services agréés. Enfin, je consens à ce qu’AMAG Automobil- und Motoren AG m’envoie par voie de " +
+            "télécommunication (par exemple par e-mail) des informations et de la publicité concernant les produits, les services et les événements de ses marques. Les données seront utilisées exclusivement " +
+            "en conformité avec les dispositions suisses relatives à la protection des données. Les données ne seront en aucun cas transmises à des tiers non autorisés. " +
             "Les données des personnes ne résidant pas en Suisse ou dans la Principauté du Liechtenstein seront communiquées à l’importateur du pays concerné aux fins susmentionnées.",
 
             "POPUP_SUBMIT": "[FR]Bestätigung",
@@ -287,11 +287,11 @@
             "FOOTER_COPYRIGHT_SKODA": "© Skoda AG 2016",
             "FOOTER_COPYRIGHT_SEAT": "© Seat AG 2016",
 
-            "FOOTER_CONDITION_POPUP": "Accetto che i miei dati personali vengano elaborati per fini di sondaggio e informazione degli interessati (ad esempio a proposito di prodotti, servizi "+
-            "ed eventi di AMAG Automobil- und Motoren AG e dei suoi marchi). Inoltre, accetto che i miei dati personali siano trasmessi ad AMAG Automobil- und Motoren AG, Aarauerstrasse 20, "+
-            "5116 Schinznach-Bad, ai suoi partner contrattuali e/o a un prestatore di servizi autorizzato. Infine accetto che AMAG Automobil- und Motoren AG mi invii tramite una tecnica di "+
-            "telecomunicazione (ad esempio per e-mail) informazioni e pubblicità su prodotti, servizi ed eventi dei suoi marchi. I dati sono utilizzati esclusivamente in conformità con le "+
-            "disposizioni svizzere in materia di protezione dei dati. In particolare, i dati non saranno inoltrati a terzi non autorizzati. "+
+            "FOOTER_CONDITION_POPUP": "Accetto che i miei dati personali vengano elaborati per fini di sondaggio e informazione degli interessati (ad esempio a proposito di prodotti, servizi " +
+            "ed eventi di AMAG Automobil- und Motoren AG e dei suoi marchi). Inoltre, accetto che i miei dati personali siano trasmessi ad AMAG Automobil- und Motoren AG, Aarauerstrasse 20, " +
+            "5116 Schinznach-Bad, ai suoi partner contrattuali e/o a un prestatore di servizi autorizzato. Infine accetto che AMAG Automobil- und Motoren AG mi invii tramite una tecnica di " +
+            "telecomunicazione (ad esempio per e-mail) informazioni e pubblicità su prodotti, servizi ed eventi dei suoi marchi. I dati sono utilizzati esclusivamente in conformità con le " +
+            "disposizioni svizzere in materia di protezione dei dati. In particolare, i dati non saranno inoltrati a terzi non autorizzati. " +
             "I dati personali di coloro che non risiedono né in Svizzera né nel Principato del Liechtenstein saranno trasmessi all’importatore del relativo paese allo stesso scopo sopra menzionato.",
 
             "POPUP_SUBMIT": "[IT]Bestätigung",
@@ -381,12 +381,12 @@
             "FOOTER_COPYRIGHT_SKODA": "© Skoda AG 2016",
             "FOOTER_COPYRIGHT_SEAT": "© Seat AG 2016",
 
-            "FOOTER_CONDITION_POPUP": "I agree that my personal data may be used for the purposes of conducting surveys of and collecting information from "+
-            "interested parties (e.g. regarding products, services and events of AMAG Automobil- und Motoren AG and its brands). Furthermore, I agree that "+
-            "my data may be transferred to AMAG Automobil- und Motoren AG, Aarauerstrasse 20, 5116 Schinznach-Bad, Switzerland, its contractual partners and/or "+
-            "authorised service providers. Finally, I give permission for AMAG Automobil- und Motoren AG to contact me (e.g. via e-mail) with information and "+
-            "advertising about products, services and events pertaining to its brands. This data will be used solely in accordance with Swiss data protection legislation. "+
-            "In particular, this data will at no time be transferred to unauthorised third parties. In the case of persons resident outside Switzerland or the Principality "+
+            "FOOTER_CONDITION_POPUP": "I agree that my personal data may be used for the purposes of conducting surveys of and collecting information from " +
+            "interested parties (e.g. regarding products, services and events of AMAG Automobil- und Motoren AG and its brands). Furthermore, I agree that " +
+            "my data may be transferred to AMAG Automobil- und Motoren AG, Aarauerstrasse 20, 5116 Schinznach-Bad, Switzerland, its contractual partners and/or " +
+            "authorised service providers. Finally, I give permission for AMAG Automobil- und Motoren AG to contact me (e.g. via e-mail) with information and " +
+            "advertising about products, services and events pertaining to its brands. This data will be used solely in accordance with Swiss data protection legislation. " +
+            "In particular, this data will at no time be transferred to unauthorised third parties. In the case of persons resident outside Switzerland or the Principality " +
             "of Liechtenstein, personal data will be transferred to the importer based in the relevant country, and said data will be used for the same purposes as outlined above.",
 
             "POPUP_SUBMIT": "[EN]Bestätigung",
@@ -415,20 +415,20 @@
 
     app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', '$state', function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource, $state) {
 
-        if(window.location.href){
-            if(window.location.href == 'https://qr.volkswagen.ch/'){
+        if (window.location.href) {
+            if (window.location.href == 'https://qr.volkswagen.ch/') {
                 console.log("ROUTE TO VW");
                 window.location.href = 'https://qr.volkswagen.ch/#/modelList/vw'
             }
-            if(window.location.href == 'https://qr.skoda.ch/'){
+            if (window.location.href == 'https://qr.skoda.ch/') {
                 console.log("ROUTE TO SKODA");
                 window.location.href = 'https://qr.skoda.ch/#/modelList/skoda'
             }
-            if(window.location.href == 'https://qr.audi.ch/'){
+            if (window.location.href == 'https://qr.audi.ch/') {
                 console.log("ROUTE TO AUDI");
                 window.location.href = 'https://qr.audi.ch/#/modelList/audi'
             }
-            if(window.location.href == 'https://qr.seat.ch/'){
+            if (window.location.href == 'https://qr.seat.ch/') {
                 console.log("ROUTE TO SEAT");
                 window.location.href = 'https://qr.seat.ch/#/modelList/seat'
             }

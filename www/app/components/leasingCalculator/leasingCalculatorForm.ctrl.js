@@ -28,16 +28,24 @@
         $scope.data.discountList = [];
         $scope.result = '-';
 
-        $scope.$watch('data.discountList',function(values, newval, oldval){
-            console.log(values);
-            console.log(newval);
-            console.log(oldval);
-        },true);
+        /*$scope.selectDiscount = function($event){
+            for(var i=0;i<$scope.data.discountList.length;i++){
+                console.log($event.currentTarget.attributes.index.value);
+                if(!(i == $event.currentTarget.attributes.index.value)){
+                    $scope.data.discountList[i] = false;
+                }
+                if(i == $event.currentTarget.attributes.index.value){
+                    if($scope.data.discountList[i]==true){
+                        $scope.data.discountList[i] = false;
+                    }
+                }
+            }
+        };*/
 
         $scope.calculate = function () {
-            for(var i=0;i<$scope.data.discountList.length;i++){
-                $scope.data.discount = $scope.data.discountList[i] ? true:false;
-                if($scope.data.discount){
+            for (var i = 0; i < $scope.data.discountList.length; i++) {
+                $scope.data.discount = $scope.data.discountList[i] ? true : false;
+                if ($scope.data.discount) {
                     $scope.data.discountRate = $rootScope.global.params.leasingPromotions[i].interestRate;
                     break;
                 }
@@ -55,9 +63,8 @@
                 $scope.result = result.monthlyInterest;
             }, function () {
                 console.log('err');
-                $scope.result = 7777;
             });
-        };;
+        };
 
     }]);
 
