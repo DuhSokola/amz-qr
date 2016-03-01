@@ -8,7 +8,7 @@
     var app = angular.module('app.leasingResource', deps);
 
     app.factory('LeasingData', ['$rootScope', '$resource', function ($rootScope, $resource) {
-        return $resource($rootScope.leasingApi, {},
+        return $resource($rootScope.leasingApi);/*, {},
             {
                 fetch: {
                     method: 'GET',
@@ -18,7 +18,7 @@
                         'Content-Type': 'application/json; charset=utf-8'
                     }
                 }
-            });
+            });*/
     }]);
 
     app.factory('LeasingDataResource', ['LeasingData', function (LeasingData) {
