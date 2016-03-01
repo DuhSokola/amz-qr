@@ -31,7 +31,7 @@
             "LEASINGCALC_DURATION_MONTH": "Monate",
             "LEASINGCALC_MILAGE_KILOMETER": "Km",
             "LEASINGCALC_OFFER": "Aktuelle Leasingangebote",
-            "LEASINGCALC_OFFER_TEXT": "<b>Leasingaktion Generell {{discountRate}}%</b> <br /> Gültig bis: <b>{{validTo}}</b> <br />Laufzeit: <b>{{runningTimeFrom}} - {{runningTimeTo}} Monate</b> <br /> Jährliche Laufleistung: <b>bis {{kmPerYear}} km</b>",
+            "LEASINGCALC_OFFER_TEXT": "<b>{{description}}</b> <br /> Gültig bis: <b>{{validTo}}</b> <br />Laufzeit: <b>{{runningTimeFrom}} - {{runningTimeTo}} Monate</b> <br /> Jährliche Laufleistung: <b>bis {{kmPerYear}} km</b>",
             "LEASINGCALC_CALCULATE": "Berechnen",
             "LEASINGCALC_CONTACT": "Kontaktanfrage",
             "LEASINGCALC_BUTTON_BACK": "Zurück",
@@ -107,7 +107,9 @@
             "Bei Personen ausserhalb der Schweiz oder Fürstentum Lichtenstein werden die Daten an den Importeur der jeweiligen Marken des entsprechenden Landes für die gleichen Zwecke wie oben erwähnt weitergegeben.",
 
             "POPUP_SUBMIT": "Bestätigung",
-            "POPUP_SUBMIT_TEXT": "Die Anfrage wurde erfolgreich gesendet"
+            "POPUP_SUBMIT_TEXT": "Die Anfrage wurde erfolgreich gesendet",
+
+            "LEASING_HEADER_TEXT": "Leasing Rechner"
         });
 
         $translateProvider.translations('FR', {
@@ -124,7 +126,7 @@
             "LEASINGCALC_DURATION_MONTH": "Mois",
             "LEASINGCALC_MILAGE_KILOMETER": "Km",
             "LEASINGCALC_OFFER": "Offres de leasing",
-            "LEASINGCALC_OFFER_TEXT": "<b>Action de leasing générale {{discountRate}}%</b> <br /> Valable jusqu'au: <b>{{validTo}}</b> <br />Durée contractuelle: <b>{{runningTimeFrom}} - {{runningTimeTo}} mois</b> <br /> Kilométrage annuel: <b>jusqu'à {{kmPerYear}} km</b>",
+            "LEASINGCALC_OFFER_TEXT": "<b>{{description}}</b> <br /> Valable jusqu'au: <b>{{validTo}}</b> <br />Durée contractuelle: <b>{{runningTimeFrom}} - {{runningTimeTo}} mois</b> <br /> Kilométrage annuel: <b>jusqu'à {{kmPerYear}} km</b>",
             "LEASINGCALC_CALCULATE": "Calculer",
             "LEASINGCALC_CONTACT": "Demande de prise de contact",
             "LEASINGCALC_BUTTON_BACK": "Retourner",
@@ -203,7 +205,9 @@
             "POPUP_SUBMIT": "Confirmation",
             "POPUP_SUBMIT_TEXT": "Nous avons reçu votre demande",
 
-            "LEASING_NO_SELECT": "non"
+            "LEASING_NO_SELECT": "non",
+
+            "LEASING_HEADER_TEXT": "Leasing calculatrice"
 
         });
 
@@ -221,7 +225,7 @@
             "LEASINGCALC_DURATION_MONTH": "Mesi",
             "LEASINGCALC_MILAGE_KILOMETER": "Km",
             "LEASINGCALC_OFFER": "Offerte leasing",
-            "LEASINGCALC_OFFER_TEXT": "<b>Promozione leasing generale: {{discountRate}}%</b> <br /> Validità fino al: <b>{{validTo}}</b> <br />Durata: <b>{{runningTimeFrom}} - {{runningTimeTo}} mesi</b> <br /> Chilometraggio annuale: <b>fino a {{kmPerYear}} km</b>",
+            "LEASINGCALC_OFFER_TEXT": "<b>{{description}}</b> <br /> Validità fino al: <b>{{validTo}}</b> <br />Durata: <b>{{runningTimeFrom}} - {{runningTimeTo}} mesi</b> <br /> Chilometraggio annuale: <b>fino a {{kmPerYear}} km</b>",
             "LEASINGCALC_CALCULATE": "Calcola",
             "LEASINGCALC_CONTACT": "Richiesta di contatto",
             "LEASINGCALC_BUTTON_BACK": "Indietro",
@@ -300,7 +304,9 @@
             "POPUP_SUBMIT": "Conferma",
             "POPUP_SUBMIT_TEXT": "La sua richiesta è stata ricevuta con successo",
 
-            "LEASING_NO_SELECT": "no"
+            "LEASING_NO_SELECT": "no",
+
+            "LEASING_HEADER_TEXT": "Leasing calcolatrice"
         });
 
         $translateProvider.translations('EN', {
@@ -317,7 +323,7 @@
             "LEASINGCALC_DURATION_MONTH": "Months",
             "LEASINGCALC_MILAGE_KILOMETER": "Km",
             "LEASINGCALC_OFFER": "Leasing offering",
-            "LEASINGCALC_OFFER_TEXT": "<b>Leasing offer, general:  {{discountRate}}%</b> <br /> Valid until: <b>{{validTo}}</b> <br />Term: <b>{{runningTimeFrom}} - {{runningTimeTo}} months</b> <br /> Annual mileage: <b> up to {{kmPerYear}} km</b>",
+            "LEASINGCALC_OFFER_TEXT": "<b>{{description}}</b> <br /> Valid until: <b>{{validTo}}</b> <br />Term: <b>{{runningTimeFrom}} - {{runningTimeTo}} months</b> <br /> Annual mileage: <b> up to {{kmPerYear}} km</b>",
             "LEASINGCALC_CALCULATE": "Calculate",
             "LEASINGCALC_CONTACT": "Contact request",
             "LEASINGCALC_BUTTON_BACK": "Back",
@@ -397,14 +403,16 @@
             "POPUP_SUBMIT": "Confirmation",
             "POPUP_SUBMIT_TEXT": "The request has been successfully sent.",
 
-            "LEASING_NO_SELECT": "no"
+            "LEASING_NO_SELECT": "no",
+
+            "LEASING_HEADER_TEXT": "Leasing Calculator"
         });
 
         $translateProvider.preferredLanguage('EN');
 
         delete $httpProvider.defaults.headers.common['X-Requested-With'];
         /*$httpProvider.defaults.headers.common['Accept'] = 'application/json, text/javascript';
-        $httpProvider.defaults.headers.common['Content-Type'] = 'application/json; charset=utf-8';*/
+         $httpProvider.defaults.headers.common['Content-Type'] = 'application/json; charset=utf-8';*/
         $httpProvider.defaults.useXDomain = true;
 
     });
@@ -429,141 +437,153 @@
     app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', '$state', '$sanitize',
         function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource, $state, $sanitize) {
 
-        if (window.location.href) {
-            if (window.location.href == 'https://qr.volkswagen.ch/') {
-                console.log("ROUTE TO VW");
-                window.location.href = 'https://qr.volkswagen.ch/#/modelList/vw'
+            if (window.location.href) {
+                if (window.location.href == 'https://qr.volkswagen.ch/') {
+                    console.log("ROUTE TO VW");
+                    window.location.href = 'https://qr.volkswagen.ch/#/modelList/vw'
+                }
+                if (window.location.href == 'https://qr.skoda.ch/') {
+                    console.log("ROUTE TO SKODA");
+                    window.location.href = 'https://qr.skoda.ch/#/modelList/skoda'
+                }
+                if (window.location.href == 'https://qr.audi.ch/') {
+                    console.log("ROUTE TO AUDI");
+                    window.location.href = 'https://qr.audi.ch/#/modelList/audi'
+                }
+                if (window.location.href == 'https://qr.seat.ch/') {
+                    console.log("ROUTE TO SEAT");
+                    window.location.href = 'https://qr.seat.ch/#/modelList/seat'
+                }
+                if (window.location.href == 'https://qr.vw-nutzfahrzeuge.ch/') {
+                    console.log("ROUTE TO VWNF");
+                    window.location.href = 'https://qr.vw-nutzfahrzeuge.ch/#/modelList/vwnf'
+                }
             }
-            if (window.location.href == 'https://qr.skoda.ch/') {
-                console.log("ROUTE TO SKODA");
-                window.location.href = 'https://qr.skoda.ch/#/modelList/skoda'
-            }
-            if (window.location.href == 'https://qr.audi.ch/') {
-                console.log("ROUTE TO AUDI");
-                window.location.href = 'https://qr.audi.ch/#/modelList/audi'
-            }
-            if (window.location.href == 'https://qr.seat.ch/') {
-                console.log("ROUTE TO SEAT");
-                window.location.href = 'https://qr.seat.ch/#/modelList/seat'
-            }
-            if (window.location.href == 'https://qr.vw-nutzfahrzeuge.ch/') {
-                console.log("ROUTE TO VWNF");
-                window.location.href = 'https://qr.vw-nutzfahrzeuge.ch/#/modelList/vwnf'
-            }
-        }
 
-        $rootScope.toggleNavi = function () {
-            $('.header-wrapper').toggleClass('active');
-        };
-        $rootScope.openPopup = function () {
-            $('.info-popup').addClass('active');
-        };
-        $rootScope.openPopupImprint = function () {
-            $('#popup_imprint').addClass('active');
-        };
-        $rootScope.openPopupPrivacy = function () {
-            $('#popup_privacy').addClass('active');
-        };
-        $rootScope.openPopupConditions = function () {
-            $('#popup_conditions').addClass('active');
-        };
-        $rootScope.closePopup = function () {
-            $('.info-popup').removeClass('active');
-        };
+            $rootScope.toggleNavi = function () {
+                $('.header-wrapper').toggleClass('active');
+            };
+            $rootScope.openPopup = function () {
+                $('.info-popup').addClass('active');
+            };
+            $rootScope.openPopupImprint = function () {
+                $('#popup_imprint').addClass('active');
+            };
+            $rootScope.openPopupPrivacy = function () {
+                $('#popup_privacy').addClass('active');
+            };
+            $rootScope.openPopupConditions = function () {
+                $('#popup_conditions').addClass('active');
+            };
+            $rootScope.closePopup = function () {
+                $('.info-popup').removeClass('active');
+            };
 
-        $rootScope.$watch('global.params.selectedBrand', function (newVal, oldVal) {
-            if (newVal !== oldVal) {
-                $scope.progressbar = ngProgressFactory.createInstance();
-                $scope.progressbar.start();
-                blockUI.start();
-                CarResource.getByBrand($rootScope.global.params.selectedBrand, function (response) {
-                        $rootScope.global.params.allModels = response.models;
-                        CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
-                        LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
-                           /* for (var i = 0; i < res.data.length; i++) {
-                                if (res.data[i].id.substring(0, 5) == '0001_') {
-                                    res.data.splice(i, 1);
-                                    i--;
-                                }
-                            }*/
-                            $rootScope.global.params.leasingPromotions = res.data ;
-
-                            console.log($rootScope.global.params.leasingPromotions);
+            $rootScope.$watch('global.params.selectedBrand', function (newVal, oldVal) {
+                if (newVal !== oldVal) {
+                    $scope.progressbar = ngProgressFactory.createInstance();
+                    $scope.progressbar.start();
+                    blockUI.start();
+                    CarResource.getByBrand($rootScope.global.params.selectedBrand, function (response) {
+                            $rootScope.global.params.allModels = response.models;
+                            CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
+                            LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
+                                $rootScope.global.params.leasingPromotions = res.data;
+                                console.log($rootScope.global.params.leasingPromotions);
+                                console.log($rootScope.global.params.selectedModelVariantObj);
+                                $scope.progressbar.complete();
+                                blockUI.stop();
+                            }, function (data) {
+                                console.log('ERROR');
+                                $scope.progressbar.complete();
+                                blockUI.stop();
+                            });
                             $scope.progressbar.complete();
                             blockUI.stop();
-                        }, function (data) {
+                        },
+                        function (error) {
                             console.log('ERROR');
                             $scope.progressbar.complete();
                             blockUI.stop();
                         });
-                        $scope.progressbar.complete();
-                        blockUI.stop();
-                    },
-                    function (error) {
-                        console.log('ERROR');
-                        $scope.progressbar.complete();
-                        blockUI.stop();
-                    });
-            }
-        }, true);
-
-        $rootScope.$watch('global.params.selectedModel', function () {
-            if ($rootScope.global.params.allModels) {
-                CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
-                LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
-                    for (var i = 0; i < res.data.length; i++) {
-                        if (res.data[i].id.substring(0, 5) == '0001_') {
-                            res.data.splice(i, 1);
-                            i--;
-                        }
-                    }
-                    $rootScope.global.params.leasingPromotions = res.data;
-                }, function (data) {
-                    console.log('ERROR LEASING PROMOTIONS');
-                });
-            }
-        });
-
-        $rootScope.$watch('global.params.selectedModelVariant', function () {
-            if ($rootScope.global.params.allModels && $rootScope.global.params.selectedModel && $rootScope.global.params.selectedModelVariant) {
-                CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
-                LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
-                    for (var i = 0; i < res.data.length; i++) {
-                        if (res.data[i].id.substring(0, 5) == '0001_') {
-                            res.data.splice(i, 1);
-                            i--;
-                        }
-                    }
-                    $rootScope.global.params.leasingPromotions = res.data;
-                }, function (data) {
-                    console.log('ERROR LEASING PROMOTIONS');
-                });
-            }
-        });
-
-        $rootScope.$on('$stateChangeSuccess', function (ev, to, toParams, from, fromParams) {
-            $rootScope.previousState = from.name;
-            $rootScope.currentState = to.name;
-        });
-
-        $rootScope.$on('$stateChangeStart', function (ev, to, toParams, from, fromParams) {
-            if (toParams.brand) {
-                if (toParams.brand.toLowerCase() === 'vw') {
-                    $rootScope.selectedCSSFile = 'volkswagen';
-                } else if (toParams.brand.toLowerCase() === 'audi') {
-                    $rootScope.selectedCSSFile = 'audi';
-                } else if (toParams.brand.toLowerCase() === 'skoda') {
-                    $rootScope.selectedCSSFile = 'skoda';
-                } else if (toParams.brand.toLowerCase() === 'seat') {
-                    $rootScope.selectedCSSFile = 'seat';
-                } else if (toParams.brand.toLowerCase() === 'vwnf') {
-                    $rootScope.selectedCSSFile = 'volkswagen';
-                } else {
-                    $rootScope.selectedCSSFile = 'volkswagen';
                 }
-            }
-        });
+            }, true);
 
-    }]);
+            $rootScope.$watch('global.params.selectedModel', function () {
+                if ($rootScope.global.params.allModels) {
+                    CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
+                    LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
+                        for (var i = 0; i < res.data.length; i++) {
+                            if (res.data[i].id.substring(0, 5) == '0001_') {
+                                res.data.splice(i, 1);
+                                i--;
+                            }
+                        }
+                        $rootScope.global.params.leasingPromotions = res.data;
+                    }, function (data) {
+                        console.log('ERROR LEASING PROMOTIONS');
+                    });
+                }
+            });
+
+            $rootScope.$watch('global.params.selectedModelVariant', function () {
+                if ($rootScope.global.params.allModels && $rootScope.global.params.selectedModel && $rootScope.global.params.selectedModelVariant) {
+                    CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
+                    LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
+                        for (var i = 0; i < res.data.length; i++) {
+                            if (res.data[i].id.substring(0, 5) == '0001_') {
+                                res.data.splice(i, 1);
+                                i--;
+                            }
+                        }
+                        $rootScope.global.params.leasingPromotions = res.data;
+                    }, function (data) {
+                        console.log('ERROR LEASING PROMOTIONS');
+                    });
+                }
+            });
+
+            $rootScope.$on('$translateChangeSuccess', function () {
+                var progressbar = ngProgressFactory.createInstance();
+                progressbar.start();
+                blockUI.start();
+                LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
+                    $rootScope.global.params.leasingPromotions = res.data;
+                    console.log($rootScope.global.params.leasingPromotions);
+                    progressbar.complete();
+                    blockUI.stop();
+                }, function (data) {
+                    console.log('ERROR');
+                    progressbar.complete();
+                    blockUI.stop();
+                });
+                progressbar.complete();
+                blockUI.stop();
+            });
+
+            $rootScope.$on('$stateChangeSuccess', function (ev, to, toParams, from, fromParams) {
+                $rootScope.previousState = from.name;
+                $rootScope.currentState = to.name;
+            });
+
+            $rootScope.$on('$stateChangeStart', function (ev, to, toParams, from, fromParams) {
+                if (toParams.brand) {
+                    if (toParams.brand.toLowerCase() === 'vw') {
+                        $rootScope.selectedCSSFile = 'volkswagen';
+                    } else if (toParams.brand.toLowerCase() === 'audi') {
+                        $rootScope.selectedCSSFile = 'audi';
+                    } else if (toParams.brand.toLowerCase() === 'skoda') {
+                        $rootScope.selectedCSSFile = 'skoda';
+                    } else if (toParams.brand.toLowerCase() === 'seat') {
+                        $rootScope.selectedCSSFile = 'seat';
+                    } else if (toParams.brand.toLowerCase() === 'vwnf') {
+                        $rootScope.selectedCSSFile = 'volkswagen';
+                    } else {
+                        $rootScope.selectedCSSFile = 'volkswagen';
+                    }
+                }
+            });
+
+        }]);
 
 }());

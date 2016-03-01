@@ -1,6 +1,6 @@
 <div layout="column" ng-controller="LeasingCalculatorFormCtrl">
     <div>
-        <h1>Leasing Rechner</h1>
+        <h1 translate="LEASING_HEADER_TEXT"></h1>
         <div layout="row" class="slider">
             <span translate="LEASINGCALC_PAYMENT"></span>
             <span aria-label="red" aria-controls="red-slider">&nbsp; {{data.payment}} {{'LEASINGCALC_PAYMENT_FRANCS'|translate}}</span>
@@ -38,7 +38,7 @@
                 </md-radio-button>
                 <md-radio-button name="radio-discount" value="{{row}}" class="md-primary radio-inline" ng-repeat="row in global.params.leasingPromotions">
                     <input type="radio"></input>
-                    <span translate="LEASINGCALC_OFFER_TEXT" translate-values="{discountRate: {{row.interestRate}}, validTo: '{{row.validTo}}', runningTimeFrom: {{row.runningTimeFrom}}, runningTimeTo: {{row.runningTimeTo}}, kmPerYear: {{row.maxKilometerPerYear}} }"></span>
+                    <span translate="LEASINGCALC_OFFER_TEXT" translate-values="{description: '{{row.description}}', validTo: '{{row.validTo}}', runningTimeFrom: {{row.runningTimeFrom}}, runningTimeTo: {{row.runningTimeTo}}, kmPerYear: {{row.maxKilometerPerYear}} }"></span>
                 </md-radio-button>
             </md-radio-group>
         </fieldset>
