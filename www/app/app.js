@@ -524,11 +524,6 @@
         $rootScope.$on('$stateChangeSuccess', function (ev, to, toParams, from, fromParams) {
             $rootScope.previousState = from.name;
             $rootScope.currentState = to.name;
-            console.log(from);
-            console.log(to);
-
-            console.log(window.location.href);
-
         });
 
         $rootScope.$on('$stateChangeStart', function (ev, to, toParams, from, fromParams) {
