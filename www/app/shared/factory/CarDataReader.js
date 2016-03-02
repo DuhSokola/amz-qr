@@ -37,7 +37,7 @@
                         else {
                             console.log('modelVariant not found, took first from variantList');
                             $rootScope.global.params.selectedModelVariant = brandModels[i].variantList[0].id;
-                            console.log(brandModels[i].variantList[0]);
+                            //console.log(brandModels[i].variantList[0]);
                             $rootScope.global.params.selectedModelVariantObj = brandModels[i].variantList[0];
                         }
                         $rootScope.global.params.variantList = brandModels[i].variantList;
