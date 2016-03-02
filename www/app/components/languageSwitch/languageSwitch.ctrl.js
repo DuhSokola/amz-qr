@@ -12,9 +12,8 @@
             $translate.use($scope.selectedLanguage);
         }else{
             var langExists = false;
-            console.log(navigator.language.toUpperCase());
             for(var item in $rootScope.global.languages){
-                if(navigator.language.toUpperCase() == $rootScope.global.languages[item]){
+                if(navigator.language.toUpperCase().substring(0,2) == $rootScope.global.languages[item]){
                     langExists = true;
                     break;
                 }
