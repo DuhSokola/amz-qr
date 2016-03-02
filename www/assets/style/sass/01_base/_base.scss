@@ -1,3 +1,14 @@
+html, body {
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*Fix scrolling bug in iOS Safari*/
+.ng-scope {
+  transform: translate3d(0, 0, 0);
+  z-index: 2;
+}
+
 body {
   margin: 0px;
 }
