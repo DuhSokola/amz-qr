@@ -109,10 +109,12 @@
             "POPUP_SUBMIT": "Bestätigung",
             "POPUP_SUBMIT_TEXT": "Die Anfrage wurde erfolgreich gesendet",
 
-            "LEASING_HEADER_TEXT": "Leasing Rechner",
-
             "LEASING_NO_SELECT": "Keine",
 
+            "LEASING_HEADER_TEXT": "Leasing Rechner",
+
+            "DESKTOP_BLOCK_TITLE": "Herzlich Willkommen!",
+            "DESKTOP_BLOCK_TEXT": "Die Seite ist nur für die mobile Nutzung ausgelegt. Bitte öffnen sie diese Seite auf Ihrem mobile Gerät."
         });
 
         $translateProvider.translations('FR', {
@@ -210,8 +212,10 @@
 
             "LEASING_NO_SELECT": "non",
 
-            "LEASING_HEADER_TEXT": "Leasing calculatrice"
+            "LEASING_HEADER_TEXT": "Leasing calculatrice",
 
+            "DESKTOP_BLOCK_TITLE": "Soyez les bienvenus!",
+            "DESKTOP_BLOCK_TEXT": "Cette page n’est conçue que pour l‘utilisation mobile. Veuillez y accéder via votre appareil mobile."
         });
 
         $translateProvider.translations('IT', {
@@ -309,7 +313,10 @@
 
             "LEASING_NO_SELECT": "no",
 
-            "LEASING_HEADER_TEXT": "Leasing calcolatrice"
+            "LEASING_HEADER_TEXT": "Leasing calcolatrice",
+
+            "DESKTOP_BLOCK_TITLE": "Benvenuti!",
+            "DESKTOP_BLOCK_TEXT": "La pagina è predisposta esclusivamente per la consultazione con dispositivi mobili. La preghiamo di aprire questa pagina sul suo dispositivo mobile."
         });
 
         $translateProvider.translations('EN', {
@@ -406,9 +413,12 @@
             "POPUP_SUBMIT": "Confirmation",
             "POPUP_SUBMIT_TEXT": "The request has been successfully sent.",
 
-            "LEASING_NO_SELECT": "no",
+            "LEASING_NO_SELECT": "no promotion",
 
-            "LEASING_HEADER_TEXT": "Leasing Calculator"
+            "LEASING_HEADER_TEXT": "Leasing Calculator",
+
+            "DESKTOP_BLOCK_TITLE": "[EN]Benvenuti!",
+            "DESKTOP_BLOCK_TEXT": "[EN]La pagina è predisposta esclusivamente per la consultazione con dispositivi mobili. La preghiamo di aprire questa pagina sul suo dispositivo mobile."
         });
 
         $translateProvider.preferredLanguage('EN');

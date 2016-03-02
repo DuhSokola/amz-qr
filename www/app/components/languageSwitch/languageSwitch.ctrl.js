@@ -12,14 +12,15 @@
             $translate.use($scope.selectedLanguage);
         }else{
             var langExists = false;
+            console.log(navigator.language.toUpperCase());
             for(var item in $rootScope.global.languages){
                 if(navigator.language.toUpperCase() == $rootScope.global.languages[item]){
                     langExists = true;
                     break;
                 }
             }
-            $cookies.put('language',$scope.languages[0]);
             $scope.selectedLanguage = langExists ? navigator.language.toUpperCase() : $scope.languages[0];
+            $cookies.put('language',$scope.selectedLanguage);
             $translate.use($scope.selectedLanguage);
         }
 
