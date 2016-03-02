@@ -30,11 +30,6 @@
   }
 }
 
-// .image-area:after {
-//   @include vwArrow;
-// }
-
-.variant-button-wrapper:before {
+.image-area:after {
   @include vwArrow;
-  margin-bottom: 25px;
 }
