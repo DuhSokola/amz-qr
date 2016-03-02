@@ -35,16 +35,14 @@
 }
 
 @mixin vwArrow {
-  &:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 9vw;
-    margin-top: -15px;
-    background: url(../img/volkswagen/arrow-down.svg) bottom center;
-    background-repeat: no-repeat;
-    background-size: 110%;
-  }
+  content: "";
+  display: block;
+  width: 100%;
+  height: 9vw;
+  margin-top: -15px;
+  background: url(../img/volkswagen/arrow-down.svg) bottom center;
+  background-repeat: no-repeat;
+  background-size: 110%;
 }
 
 @mixin audiArrow {
