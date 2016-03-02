@@ -441,6 +441,36 @@
         function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource, $state, $sanitize) {
 
             if (window.location.href) {
+                /*Workaround REDIRECTS*/
+                /*if (window.location.href == 'https://qr.volkswagen.ch/1wkO' || window.location.href == 'http://qr.volkswagen.ch/1wkO') {
+                    window.location.href = 'http://q-r.to/1wkO'
+                }
+                if (window.location.href == 'https://qr.volkswagen.ch/1x3M' || window.location.href == 'http://qr.volkswagen.ch/1x3M') {
+                    window.location.href = 'http://q-r.to/1x3M'
+                }
+                if (window.location.href == 'https://qr.volkswagen.ch/23md' || window.location.href == 'http://qr.volkswagen.ch/23md') {
+                    window.location.href = 'http://q-r.to/23md'
+                }
+                if (window.location.href == 'https://qr.volkswagen.ch/1x2x' || window.location.href == 'http://qr.volkswagen.ch/1x2x') {
+                    window.location.href = 'http://q-r.to/1x2x'
+                }
+                if (window.location.href == 'https://qr.volkswagen.ch/1xrG' || window.location.href == 'http://qr.volkswagen.ch/1xrG') {
+                    window.location.href = 'http://q-r.to/1xrG'
+                }
+                if (window.location.href == 'https://qr.volkswagen.ch/2D5i' || window.location.href == 'http://qr.volkswagen.ch/2D5i') {
+                    window.location.href = 'http://q-r.to/2D5i'
+                }
+                if (window.location.href == 'https://qr.volkswagen.ch/1x3B' || window.location.href == 'http://qr.volkswagen.ch/1x3B') {
+                    window.location.href = 'http://q-r.to/1x3B'
+                }
+                if (window.location.href == 'https://qr.volkswagen.ch/20bA' || window.location.href == 'http://qr.volkswagen.ch/20bA') {
+                    window.location.href = 'http://q-r.to/20bA'
+                }
+                if (window.location.href == 'https://qr.volkswagen.ch/2GTo' || window.location.href == 'http://qr.volkswagen.ch/2GTo') {
+                    window.location.href = 'http://q-r.to/2GTo'
+                }*/
+
+                /*WORKAROUND TO BRANDS*/
                 if (window.location.href == 'https://qr.volkswagen.ch/') {
                     console.log("ROUTE TO VW");
                     window.location.href = 'https://qr.volkswagen.ch/#/modelList/vw'
@@ -462,34 +492,7 @@
                     window.location.href = 'https://qr.vw-nutzfahrzeuge.ch/#/modelList/vwnf'
                 }
 
-                /*Workaround REDIRECTS*/
-                if (window.location.href == 'http://qr.volkswagen.ch/1wkO') {
-                    window.location.href = 'http://q-r.to/1wkO'
-                }
-                if (window.location.href == 'http://qr.volkswagen.ch/1x3M') {
-                    window.location.href = 'http://q-r.to/1x3M'
-                }
-                if (window.location.href == 'http://qr.volkswagen.ch/23md') {
-                    window.location.href = 'http://q-r.to/23md'
-                }
-                if (window.location.href == 'http://qr.volkswagen.ch/1x2x') {
-                    window.location.href = 'http://q-r.to/1x2x'
-                }
-                if (window.location.href == 'http://qr.volkswagen.ch/1xrG') {
-                    window.location.href = 'http://q-r.to/1xrG'
-                }
-                if (window.location.href == 'http://qr.volkswagen.ch/2D5i') {
-                    window.location.href = 'http://q-r.to/2D5i'
-                }
-                if (window.location.href == 'http://qr.volkswagen.ch/1x3B') {
-                    window.location.href = 'http://q-r.to/1x3B'
-                }
-                if (window.location.href == 'http://qr.volkswagen.ch/20bA') {
-                    window.location.href = 'http://q-r.to/20bA'
-                }
-                if (window.location.href == 'http://qr.volkswagen.ch/2GTo') {
-                    window.location.href = 'http://q-r.to/2GTo'
-                }
+
             }
 
             $rootScope.toggleNavi = function () {
@@ -521,8 +524,8 @@
                             CarDataReader.loadCarDataByModel($rootScope.global.params.allModels, $rootScope.global.params.selectedModel, $rootScope.global.params.selectedModelVariant);
                             LeasingPromotionDataResource.getLeasingPromotions($rootScope.global.params.selectedModelVariantObj, function (res) {
                                 $rootScope.global.params.leasingPromotions = res.data;
-                                console.log($rootScope.global.params.leasingPromotions);
-                                console.log($rootScope.global.params.selectedModelVariantObj);
+                                //console.log($rootScope.global.params.leasingPromotions);
+                                //console.log($rootScope.global.params.selectedModelVariantObj);
                                 $scope.progressbar.complete();
                                 blockUI.stop();
                             }, function (data) {
