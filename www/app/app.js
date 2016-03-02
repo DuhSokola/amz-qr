@@ -417,9 +417,10 @@
 
             "LEASING_HEADER_TEXT": "Leasing Calculator",
 
-            "DESKTOP_BLOCK_TITLE": "[EN]Benvenuti!",
-            "DESKTOP_BLOCK_TEXT": "[EN]La pagina è predisposta esclusivamente per la consultazione con dispositivi mobili. La preghiamo di aprire questa pagina sul suo dispositivo mobile."
-        });
+            "DESKTOP_BLOCK_TITLE": "Welcome!",
+            "DESKTOP_BLOCK_TEXT": "This site is designed for mobile use only. Please open this site on your mobile device."
+
+    });
 
         $translateProvider.preferredLanguage('EN');
 
@@ -448,7 +449,7 @@
 
 
     app.controller('mainCtrl', ['$scope', '$rootScope', 'CarResource', 'ngProgressFactory', 'blockUI', 'CarDataReader', 'LeasingPromotionDataResource', '$state', '$sanitize',
-        function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource, $state, $sanitize) {
+        function ($scope, $rootScope, CarResource, ngProgressFactory, blockUI, CarDataReader, LeasingPromotionDataResource) {
 
             if (window.location.href) {
                 /*Workaround REDIRECTS*/
@@ -504,6 +505,7 @@
 
 
             }
+
             $rootScope.toggleDesktopOverlay = function () {
                 $('.desktop-overlay').css('display', 'none');
             };
