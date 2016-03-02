@@ -494,7 +494,9 @@
 
 
             }
-
+            $rootScope.toggleDesktopOverlay = function () {
+                $('.desktop-overlay').css('display', 'none');
+            };
             $rootScope.toggleNavi = function () {
                 $('.header-wrapper').toggleClass('active');
             };
