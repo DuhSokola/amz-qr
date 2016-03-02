@@ -18,7 +18,7 @@
                     break;
                 }
             }
-            $scope.selectedLanguage = langExists ? navigator.language.toUpperCase() : $scope.languages[0];
+            $scope.selectedLanguage = langExists ? navigator.language.toUpperCase().substring(0,2) : $scope.languages[0];
             $cookies.put('language',$scope.selectedLanguage);
             $translate.use($scope.selectedLanguage);
         }

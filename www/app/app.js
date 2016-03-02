@@ -109,7 +109,7 @@
             "POPUP_SUBMIT": "Bestätigung",
             "POPUP_SUBMIT_TEXT": "Die Anfrage wurde erfolgreich gesendet",
 
-            "LEASING_NO_SELECT": "Keine",
+            "LEASING_NO_SELECT": "Standard Zinssatz",
 
             "LEASING_HEADER_TEXT": "Leasing Rechner",
 
@@ -210,7 +210,7 @@
             "POPUP_SUBMIT": "Confirmation",
             "POPUP_SUBMIT_TEXT": "Nous avons reçu votre demande",
 
-            "LEASING_NO_SELECT": "non",
+            "LEASING_NO_SELECT": "Taux d'intérêt standard",
 
             "LEASING_HEADER_TEXT": "Leasing calculatrice",
 
@@ -311,7 +311,7 @@
             "POPUP_SUBMIT": "Conferma",
             "POPUP_SUBMIT_TEXT": "La sua richiesta è stata ricevuta con successo",
 
-            "LEASING_NO_SELECT": "no",
+            "LEASING_NO_SELECT": "Tasso d'interesse standard",
 
             "LEASING_HEADER_TEXT": "Leasing calcolatrice",
 
@@ -413,7 +413,7 @@
             "POPUP_SUBMIT": "Confirmation",
             "POPUP_SUBMIT_TEXT": "The request has been successfully sent.",
 
-            "LEASING_NO_SELECT": "no promotion",
+            "LEASING_NO_SELECT": "Standard interest rate",
 
             "LEASING_HEADER_TEXT": "Leasing Calculator",
 
