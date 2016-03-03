@@ -504,7 +504,10 @@
 
 
             }
-
+            $rootScope.positionLanguageSelect = function () {
+                var selectContainer = $('.language-options').closest('.md-select-menu-container');
+                selectContainer.css('margin-top', '-213px');
+            };
             $rootScope.toggleDesktopOverlay = function () {
                 $('.desktop-overlay').css('display', 'none');
             };

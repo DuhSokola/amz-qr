@@ -402,7 +402,7 @@ md-select-menu {
 .md-select-menu-container {
   position: fixed;
   left: 0 !important;
-  top: calc(100% - 240px) !important;
+  top: 0;
   z-index: 90;
   opacity: 0;
   width: 100%;
