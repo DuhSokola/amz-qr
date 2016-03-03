@@ -37,7 +37,6 @@
         $("fieldset.standard.contact-fieldset.layout-row").css("padding-top","5px");
 
         $scope.$watch('data.discountRate',function(){
-            console.log($scope.data.discountRate);
             if($scope.data.discountRate != $scope.data.interestRateDefault){
                 $scope.data.discountRateD = jQuery.parseJSON($scope.data.discountRate);
             }else{

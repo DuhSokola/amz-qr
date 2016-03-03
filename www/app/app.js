@@ -114,7 +114,9 @@
             "LEASING_HEADER_TEXT": "Leasing Rechner",
 
             "DESKTOP_BLOCK_TITLE": "Herzlich Willkommen!",
-            "DESKTOP_BLOCK_TEXT": "Die Seite ist nur für die mobile Nutzung ausgelegt. Bitte öffnen sie diese Seite auf Ihrem mobile Gerät."
+            "DESKTOP_BLOCK_TEXT": "Die Seite ist nur für die mobile Nutzung ausgelegt. Bitte öffnen sie diese Seite auf Ihrem mobile Gerät.",
+
+            "MODELLIST_MODELS": "Modelle"
         });
 
         $translateProvider.translations('FR', {
@@ -215,7 +217,9 @@
             "LEASING_HEADER_TEXT": "Leasing calculatrice",
 
             "DESKTOP_BLOCK_TITLE": "Soyez les bienvenus!",
-            "DESKTOP_BLOCK_TEXT": "Cette page n’est conçue que pour l‘utilisation mobile. Veuillez y accéder via votre appareil mobile."
+            "DESKTOP_BLOCK_TEXT": "Cette page n’est conçue que pour l‘utilisation mobile. Veuillez y accéder via votre appareil mobile.",
+
+            "MODELLIST_MODELS": "Modèles"
         });
 
         $translateProvider.translations('IT', {
@@ -316,7 +320,9 @@
             "LEASING_HEADER_TEXT": "Leasing calcolatrice",
 
             "DESKTOP_BLOCK_TITLE": "Benvenuti!",
-            "DESKTOP_BLOCK_TEXT": "La pagina è predisposta esclusivamente per la consultazione con dispositivi mobili. La preghiamo di aprire questa pagina sul suo dispositivo mobile."
+            "DESKTOP_BLOCK_TEXT": "La pagina è predisposta esclusivamente per la consultazione con dispositivi mobili. La preghiamo di aprire questa pagina sul suo dispositivo mobile.",
+
+            "MODELLIST_MODELS": "Modelli"
         });
 
         $translateProvider.translations('EN', {
@@ -337,7 +343,7 @@
             "LEASINGCALC_CALCULATE": "Calculate",
             "LEASINGCALC_CONTACT": "Contact request",
             "LEASINGCALC_BUTTON_BACK": "Back",
-            "LEASINGCALC_MOTHLY_PAYMENT": "Monthly installment:",
+            "LEASINGCALC_MOTHLY_PAYMENT": "Monthly rate:",
             "LEASINGCALC_CHF": "CHF",
             "LEASINGCALC_INTERESTRATE": "Interest rate:",
             "LEASINGCALC_INTERESTRATE_NOMINAL": "Nominal rate:",
@@ -346,7 +352,7 @@
             "LANDINGPAGE_LEASING": "Calculate leasing",
             "LANDINGPAGE_TESTDRIVE": "Test drive",
             "LANDINGPAGE_CATALOG": "Catalogue",
-            "LANDINGPAGE_BACK_TO_MODELLIST": "To overview of models",
+            "LANDINGPAGE_BACK_TO_MODELLIST": "To the model overview",
 
             "CONTACT_LEGEND_CUSTOMER_DATA": "Your data",
             "CONTACT_LEGEND_CATALOG": "Dispatch catalogue",
@@ -354,7 +360,7 @@
             "CONTACT_LEGEND_LEASING": "Leasing",
             "CONTACT_LEGEND_NEWSLETTER": "Newsletter",
             "CONTACT_LEGEND_PRIVACY": "Data protection provisions",
-            "CONTACT_MODELS": "Other variants",
+            "CONTACT_MODELS": "Other model types",
             "CONTACT_SALUTATION_MR": "Mr",
             "CONTACT_SALUTATION_MRS": "Ms",
             "CONTACT_SALUTATION": "Title",
@@ -418,7 +424,9 @@
             "LEASING_HEADER_TEXT": "Leasing Calculator",
 
             "DESKTOP_BLOCK_TITLE": "Welcome!",
-            "DESKTOP_BLOCK_TEXT": "This site is designed for mobile use only. Please open this site on your mobile device."
+            "DESKTOP_BLOCK_TEXT": "This site is designed for mobile use only. Please open this site on your mobile device.",
+
+            "MODELLIST_MODELS": "Models"
 
     });
 
