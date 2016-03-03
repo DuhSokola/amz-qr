@@ -32,7 +32,7 @@
                 <span translate="LEASINGCALC_OFFER_TEXT" translate-values="{discountRate: {{row.interestRate}}, validTo: '{{row.validTo}}', runningTimeFrom: {{row.runningTimeFrom}}, runningTimeTo: {{row.runningTimeTo}}, kmPerYear: {{row.maxKilometerPerYear}} }"></span>
             </md-checkbox>-->
             <md-radio-group ng-model="data.discountRate">
-                <md-radio-button name="radio-discount" value="undefined" class="md-primary radio-inline" ng-checked="data.discountRate == undefined">
+                <md-radio-button name="radio-discount" value="{{data.interestRateDefault}}" class="md-primary radio-inline" ng-checked="data.discountRate == data.interestRateDefault">
                     <input type="radio"></input>
                     <span><b translate="LEASING_NO_SELECT"></b></span>
                 </md-radio-button>
@@ -45,7 +45,7 @@
 
         <div layout="row" class="total-outer-wrapper">
             <h4>{{'LEASINGCALC_INTERESTRATE'|translate}}</h4>
-            <p class="zins nominal">{{'LEASINGCALC_INTERESTRATE_NOMINAL'|translate}} <b>{{data.interestRateDefault}}%</b></p>
+            <p class="zins nominal">{{'LEASINGCALC_INTERESTRATE_NOMINAL'|translate}} <b>{{data.discountRateD.interestRate}}%</b></p>
             <p class="zins effektiv">{{'LEASINGCALC_INTERESTRATE_EFFEKTIVE'|translate}} <b>{{data.interestRateEffektive}}%</b></p>
         </div>
         <div layout="row">

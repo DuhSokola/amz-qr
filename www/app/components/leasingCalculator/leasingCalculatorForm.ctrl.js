@@ -26,19 +26,28 @@
         $scope.data.duration = 12;
         $scope.data.milage = 10000;
         $scope.data.interestRateDefault = '5.40';
-        $scope.data.interestRateEffektive = parseFloat($scope.data.interestRateDefault) + 0.05;
-        $scope.data.discountRate = undefined;
+        $scope.data.discountRate = $scope.data.interestRateDefault;
+        $scope.data.discountRateD = {
+            interestRate: $scope.data.interestRateDefault
+        };
+        $scope.data.interestRateEffektive = parseFloat($scope.data.discountRateD.interestRate) + 0.05;
+
         $scope.result = '-';
 
         $("fieldset.standard.contact-fieldset.layout-row").css("padding-top","5px");
 
-        $scope.calculate = function () {
+        $scope.$watch('data.discountRate',function(){
             console.log($scope.data.discountRate);
-            if($scope.data.discountRate != undefined && $scope.data.discountRate != 'undefined'){
+            if($scope.data.discountRate != $scope.data.interestRateDefault){
                 $scope.data.discountRateD = jQuery.parseJSON($scope.data.discountRate);
             }else{
-                $scope.data.discountRateD = undefined;
+                $scope.data.discountRateD.interestRate = $scope.data.interestRateDefault;
             }
+            $scope.data.interestRateEffektive = Math.round((parseFloat($scope.data.discountRateD.interestRate) + 0.05) * 100) / 100;
+        });
+
+        $scope.calculate = function () {
+
 
             LeasingDataResource.getLeasingCalculation({
                 carCode: $rootScope.global.params.selectedModelVariantObj.versionList[0].id,
