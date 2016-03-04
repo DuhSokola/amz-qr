@@ -1,36 +1,35 @@
 header {
-  @include fontbold;
   border-bottom: 1px solid $line;
+  height: 66px;
   .logo {
-    width: 36px;
-    height: 36px;
+    height: 38px;
+    width: 38px;
     margin-top: 11px;
-    background-image: url(../img/volkswagen/logo.svg);
+    background-image: url(../img/volkswagen/logo.png);
   }
+  // .burger {
+  //   span {
+  //     background-color: $black;
+  //   }
+  // }
 
-  .burger {
-    span {
-      background-color: $black;
-    }
-  }
-
-  .menu {
-    text-align: center;
-    font-size: 0.9rem;
-    a {
-      color: $blue-grey;
-      border-bottom: 1px solid $line;
-    }
-    li {
-      margin: 0 1rem;
-      padding: 1.5rem 0;
-      &:not(:last-child) {
-        border-bottom: 1px solid $light-grey;
-      }
-      background-size: .6rem;
-      &:hover {
-        color: $black;
-      }
-    }
-  }
+  // .menu {
+  //   text-align: center;
+  //   font-size: 0.9rem;
+  //   a {
+  //     color: $blue-grey;
+  //     border-bottom: 1px solid $line;
+  //   }
+  //   li {
+  //     margin: 0 1rem;
+  //     padding: 1.5rem 0;
+  //     &:not(:last-child) {
+  //       border-bottom: 1px solid $light-grey;
+  //     }
+  //     background-size: .6rem;
+  //     &:hover {
+  //       color: $black;
+  //     }
+  //   }
+  // }
 }
