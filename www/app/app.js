@@ -116,7 +116,9 @@
             "DESKTOP_BLOCK_TITLE": "Herzlich Willkommen!",
             "DESKTOP_BLOCK_TEXT": "Die Seite ist nur für die mobile Nutzung ausgelegt. Bitte öffnen sie diese Seite auf Ihrem mobile Gerät.",
 
-            "MODELLIST_MODELS": "Modelle"
+            "MODELLIST_MODELS": "Modelle",
+
+            "FOOTER_TEXT" : "Bitte beachten Sie, dass alle Informationen und (Fahrzeug-)Daten auf diesen Seiten den Schweizer Markt betreffen."
         });
 
         $translateProvider.translations('FR', {
@@ -219,7 +221,10 @@
             "DESKTOP_BLOCK_TITLE": "Soyez les bienvenus!",
             "DESKTOP_BLOCK_TEXT": "Cette page n’est conçue que pour l‘utilisation mobile. Veuillez y accéder via votre appareil mobile.",
 
-            "MODELLIST_MODELS": "Modèles"
+            "MODELLIST_MODELS": "Modèles",
+
+            "FOOTER_TEXT" : "Veuillez noter que toutes les informations et données (des véhicules) figurant sur ces pages concernent le marché suisse."
+
         });
 
         $translateProvider.translations('IT', {
@@ -322,7 +327,10 @@
             "DESKTOP_BLOCK_TITLE": "Benvenuti!",
             "DESKTOP_BLOCK_TEXT": "La pagina è predisposta esclusivamente per la consultazione con dispositivi mobili. La preghiamo di aprire questa pagina sul suo dispositivo mobile.",
 
-            "MODELLIST_MODELS": "Modelli"
+            "MODELLIST_MODELS": "Modelli",
+
+            "FOOTER_TEXT" : "Vi preghiamo di notare che tutte le informazioni e i dati (relativi al veicolo) su queste pagine riguardano il mercato svizzero."
+
         });
 
         $translateProvider.translations('EN', {
@@ -426,7 +434,9 @@
             "DESKTOP_BLOCK_TITLE": "Welcome!",
             "DESKTOP_BLOCK_TEXT": "This site is designed for mobile use only. Please open this site on your mobile device.",
 
-            "MODELLIST_MODELS": "Models"
+            "MODELLIST_MODELS": "Models",
+
+            "FOOTER_TEXT" : "Please note that all the information and (vehicle) data on these pages relates to the Swiss market."
 
     });
 
